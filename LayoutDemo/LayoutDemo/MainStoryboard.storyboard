@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733.0"/>
+    </dependencies>
+    <scenes>
+        <!--class Prefix:identifier View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="LayoutDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3"/>
+                        <viewControllerLayoutGuide type="bottom" id="4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="No button pressed" lineBreakMode="tailTruncation" id="11" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center" misplaced="YES" minimumFontSize="9">
+                                <rect key="frame" x="77.8" y="113" width="184" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="1" alpha="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="21" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="72" y="208" width="46" height="30"/>
+                                <state key="normal" title="Left">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="24" firstAttribute="width" constant="46"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="14" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="216" y="209" width="46" height="30"/>
+                                <state key="normal" title="Right">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="27" firstAttribute="width" constant="46"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="19" constant="110" firstItem="11" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top"/>
+                            <constraint firstItem="13" firstAttribute="top" secondItem="11" secondAttribute="bottom" constant="75" id="36"/>
+                            <constraint firstItem="14" firstAttribute="top" secondItem="11" secondAttribute="bottom" constant="75" id="37"/>
+                            <constraint id="53" firstItem="11" firstAttribute="leading" secondItem="13" secondAttribute="leading" constant="0.0"/>
+                            <constraint id="54" firstItem="11" firstAttribute="height" secondItem="13" secondAttribute="height" constant="0.0"/>
+                            <constraint id="55" firstItem="14" firstAttribute="trailing" secondItem="11" secondAttribute="trailing" constant="0.0"/>
+                            <constraint id="56" firstItem="14" firstAttribute="centerY" secondItem="13" secondAttribute="centerY" constant="0.0"/>
+                            <constraint id="61" firstItem="13" firstAttribute="centerY" secondItem="14" secondAttribute="centerY" constant="0.0"/>
+                            <constraint firstItem="kh9-bI-dsS" firstAttribute="trailing" secondItem="11" secondAttribute="trailing" constant="34" id="75"/>
+                            <constraint firstItem="11" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="46" id="76"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftButton" destination="13" id="name-outlet-13"/>
+                        <outlet property="rightButton" destination="14" id="name-outlet-14"/>
+                        <outlet property="statusLabel" destination="11" id="name-outlet-11"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="4"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
