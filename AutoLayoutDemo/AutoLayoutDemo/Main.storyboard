@@ -71,8 +71,8 @@
                                     <action selector="UIButton28_TouchUpInside:" destination="BYZ-38-t0r" id="33" eventType="touchUpInside"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="30" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="58" y="64" width="152" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="30" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="58" y="64" width="98" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -86,17 +86,6 @@
                                 </state>
                                 <connections>
                                     <action selector="UIButton28_TouchUpInside:" destination="36" id="35" eventType="touchUpInside"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="39" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="164" y="125" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
-                                <state key="normal" title="3">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="UIButton28_TouchUpInside:" destination="41" id="40" eventType="touchUpInside"/>
-                                    <action selector="ThreeButton_TouchUpInside:" destination="BYZ-38-t0r" id="42" eventType="touchUpInside"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -133,8 +122,6 @@
                         <outlet property="oneButton" destination="27" id="name-outlet-27"/>
                         <outlet property="resultLabel" destination="30" id="name-outlet-30"/>
                         <outlet property="equalsButton" destination="34" id="name-outlet-34"/>
-                        <outlet property="twoButton" destination="28" id="name-outlet-28"/>
-                        <outlet property="threeButton" destination="39" id="name-outlet-39"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

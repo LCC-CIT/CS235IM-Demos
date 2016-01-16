@@ -28,19 +28,11 @@ namespace AutoLayoutDemo
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel displayLabel { get; set; }
+		UILabel resultLabel { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		NSLayoutConstraint secondButton { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton threeButton { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton twoButton { get; set; }
 
 		[Action ("FirstButton_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -50,13 +42,9 @@ namespace AutoLayoutDemo
 		[GeneratedCode ("iOS Designer", "1.0")]
 		partial void OneButton_TouchUpInside (UIButton sender);
 
-		[Action ("ThreeButton_TouchUpInside:")]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void ThreeButton_TouchUpInside (UIButton sender);
-
 		[Action ("UIButton28_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void twoButton_TouchUpInside (UIButton sender);
+		partial void UIButton28_TouchUpInside (UIButton sender);
 
 		void ReleaseDesignerOutlets ()
 		{
@@ -72,21 +60,13 @@ namespace AutoLayoutDemo
 				oneButton.Dispose ();
 				oneButton = null;
 			}
-			if (displayLabel != null) {
-				displayLabel.Dispose ();
-				displayLabel = null;
+			if (resultLabel != null) {
+				resultLabel.Dispose ();
+				resultLabel = null;
 			}
 			if (secondButton != null) {
 				secondButton.Dispose ();
 				secondButton = null;
-			}
-			if (threeButton != null) {
-				threeButton.Dispose ();
-				threeButton = null;
-			}
-			if (twoButton != null) {
-				twoButton.Dispose ();
-				twoButton = null;
 			}
 		}
 	}
