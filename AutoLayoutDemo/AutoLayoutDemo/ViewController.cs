@@ -35,7 +35,7 @@ namespace AutoLayoutDemo
 			DisplayValue();
 		}
 
-		partial void UIButton28_TouchUpInside (UIButton sender)
+		partial void twoButton_TouchUpInside (UIButton sender)
 		{
 			value += "2";
 			DisplayValue();
@@ -43,8 +43,14 @@ namespace AutoLayoutDemo
 
 		void DisplayValue()
 		{
-			resultLabel.Text = value;
+			displayLabel.Text = value;
 		}
-	}
+
+        partial void ThreeButton_TouchUpInside(UIButton sender)
+        {
+            value += "2";
+            DisplayValue();
+        }
+    }
 }
 
