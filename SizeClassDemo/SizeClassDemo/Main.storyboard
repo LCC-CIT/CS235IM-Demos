@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
@@ -33,12 +33,11 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="263"/>
-                                        <exclude reference="266"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="266"/>
+                                        <exclude reference="266"/>
                                     </mask>
                                     <rect key="frame" x="58" y="201" width="46" height="30"/>
                                 </variation>
@@ -55,23 +54,17 @@
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <rect key="frame" x="112" y="201" width="46" height="30"/>
                                     <mask key="constraints">
-                                        <include reference="271"/>
-                                        <include reference="274"/>
+                                        <exclude reference="271"/>
+                                        <exclude reference="274"/>
                                     </mask>
                                 </variation>
                                 <constraints>
                                     <constraint id="271" firstAttribute="width" constant="46"/>
                                     <constraint id="274" firstItem="28" firstAttribute="height" constant="30"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="271"/>
-                                        <exclude reference="274"/>
-                                    </mask>
-                                </variation>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="30" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="198" y="150.5" width="154" height="21"/>
+                                <rect key="frame" x="58" y="90.5" width="154" height="21"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="1" alpha="1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -89,7 +82,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="34" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="306" y="299" width="46" height="30"/>
+                                <rect key="frame" x="166" y="239" width="46" height="30"/>
                                 <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 <state key="normal" title="=">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -98,7 +91,7 @@
                                     <action selector="UIButton28_TouchUpInside:" destination="36" id="35" eventType="touchUpInside"/>
                                     <action selector="EqualsButton_TouchUpInside:" destination="BYZ-38-t0r" id="102" eventType="touchUpInside"/>
                                 </connections>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <rect key="frame" x="166" y="239" width="30.5" height="30"/>
                                     <mask key="constraints">
                                         <exclude reference="293"/>
@@ -114,7 +107,7 @@
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="43" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="306" y="185" width="46" height="30"/>
+                                <rect key="frame" x="166" y="125" width="46" height="30"/>
                                 <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 <state key="normal" title="9">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -149,16 +142,10 @@
                                     <constraint id="250" firstAttribute="width" constant="46"/>
                                     <constraint id="251" firstItem="46" firstAttribute="height" constant="30"/>
                                 </constraints>
-                                <variation key="default">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="250"/>
                                         <exclude reference="251"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="250"/>
-                                        <include reference="251"/>
                                     </mask>
                                     <rect key="frame" x="58" y="163" width="46" height="30"/>
                                 </variation>
@@ -176,23 +163,17 @@
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <rect key="frame" x="112" y="163" width="46" height="30"/>
                                     <mask key="constraints">
-                                        <include reference="254"/>
-                                        <include reference="255"/>
+                                        <exclude reference="254"/>
+                                        <exclude reference="255"/>
                                     </mask>
                                 </variation>
                                 <constraints>
                                     <constraint id="254" firstItem="49" firstAttribute="height" constant="30"/>
                                     <constraint id="255" firstItem="49" firstAttribute="width" constant="46"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="254"/>
-                                        <exclude reference="255"/>
-                                    </mask>
-                                </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="52" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="306" y="223" width="46" height="30"/>
+                                <rect key="frame" x="166" y="163" width="46" height="30"/>
                                 <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 <state key="normal" title="6">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -226,23 +207,17 @@
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <rect key="frame" x="112" y="125" width="46" height="30"/>
                                     <mask key="constraints">
-                                        <include reference="205"/>
-                                        <include reference="206"/>
+                                        <exclude reference="205"/>
+                                        <exclude reference="206"/>
                                     </mask>
                                 </variation>
                                 <constraints>
                                     <constraint id="205" firstItem="55" firstAttribute="height" constant="30"/>
                                     <constraint id="206" firstItem="55" firstAttribute="width" constant="46"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="205"/>
-                                        <exclude reference="206"/>
-                                    </mask>
-                                </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="58" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="199" y="185" width="46" height="30"/>
+                                <rect key="frame" x="59" y="125" width="46" height="30"/>
                                 <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 <state key="normal" title="7">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -264,7 +239,7 @@
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="61" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="306" y="261" width="46" height="30"/>
+                                <rect key="frame" x="166" y="201" width="46" height="30"/>
                                 <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
                                 <state key="normal" title="3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -298,20 +273,14 @@
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <rect key="frame" x="112" y="239" width="46" height="30"/>
                                     <mask key="constraints">
-                                        <include reference="295"/>
-                                        <include reference="296"/>
+                                        <exclude reference="295"/>
+                                        <exclude reference="296"/>
                                     </mask>
                                 </variation>
                                 <constraints>
                                     <constraint id="295" firstItem="64" firstAttribute="height" constant="30"/>
                                     <constraint id="296" firstItem="64" firstAttribute="width" constant="46"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="295"/>
-                                        <exclude reference="296"/>
-                                    </mask>
-                                </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="67" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="58" y="239" width="46" height="30"/>
@@ -548,21 +517,9 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="174"/>
-                                <exclude reference="176"/>
-                                <exclude reference="181"/>
-                                <exclude reference="182"/>
-                                <exclude reference="185"/>
-                                <exclude reference="202"/>
                                 <exclude reference="221"/>
-                                <exclude reference="252"/>
-                                <exclude reference="253"/>
                                 <exclude reference="258"/>
                                 <exclude reference="259"/>
-                                <exclude reference="267"/>
-                                <exclude reference="268"/>
-                                <exclude reference="272"/>
-                                <exclude reference="273"/>
                                 <exclude reference="284"/>
                                 <exclude reference="285"/>
                                 <exclude reference="301"/>
@@ -572,7 +529,6 @@
                                 <exclude reference="316"/>
                                 <exclude reference="329"/>
                                 <exclude reference="330"/>
-                                <exclude reference="331"/>
                                 <exclude reference="332"/>
                                 <exclude reference="333"/>
                                 <exclude reference="334"/>
@@ -584,28 +540,28 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <exclude reference="168"/>
-                                <include reference="174"/>
-                                <include reference="176"/>
-                                <include reference="181"/>
-                                <include reference="182"/>
-                                <include reference="185"/>
+                                <exclude reference="174"/>
+                                <exclude reference="176"/>
+                                <exclude reference="181"/>
+                                <exclude reference="182"/>
+                                <exclude reference="185"/>
                                 <exclude reference="186"/>
                                 <exclude reference="189"/>
                                 <exclude reference="195"/>
                                 <exclude reference="196"/>
                                 <exclude reference="201"/>
-                                <include reference="202"/>
+                                <exclude reference="202"/>
                                 <exclude reference="221"/>
                                 <exclude reference="244"/>
                                 <exclude reference="245"/>
-                                <include reference="252"/>
-                                <include reference="253"/>
+                                <exclude reference="252"/>
+                                <exclude reference="253"/>
                                 <exclude reference="258"/>
                                 <exclude reference="259"/>
-                                <include reference="267"/>
-                                <include reference="268"/>
-                                <include reference="272"/>
-                                <include reference="273"/>
+                                <exclude reference="267"/>
+                                <exclude reference="268"/>
+                                <exclude reference="272"/>
+                                <exclude reference="273"/>
                                 <exclude reference="278"/>
                                 <exclude reference="279"/>
                                 <exclude reference="284"/>
@@ -619,6 +575,7 @@
                                 <exclude reference="316"/>
                                 <include reference="339"/>
                                 <include reference="340"/>
+                                <exclude reference="331"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
