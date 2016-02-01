@@ -411,6 +411,9 @@
                                     <constraint id="364" firstItem="111" firstAttribute="height" constant="30"/>
                                     <constraint id="365" firstItem="111" firstAttribute="width" constant="46"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <rect key="frame" x="192" y="280" width="46" height="30"/>
+                                </variation>
                             </button>
                         </subviews>
                         <constraints>
