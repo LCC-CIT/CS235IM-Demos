@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedBlueNavControllerDemo", "RedBlueNavControllerDemo\RedBlueNavControllerDemo.csproj", "{F93984B1-5FA2-4C92-A7F3-467D0B883FD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F93984B1-5FA2-4C92-A7F3-467D0B883FD7}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{F93984B1-5FA2-4C92-A7F3-467D0B883FD7}.Debug|iPhone.Build.0 = Debug|iPhone
+		{F93984B1-5FA2-4C92-A7F3-467D0B883FD7}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F93984B1-5FA2-4C92-A7F3-467D0B883FD7}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F93984B1-5FA2-4C92-A7F3-467D0B883FD7}.Release|iPhone.ActiveCfg = Release|iPhone
+		{F93984B1-5FA2-4C92-A7F3-467D0B883FD7}.Release|iPhone.Build.0 = Release|iPhone
+		{F93984B1-5FA2-4C92-A7F3-467D0B883FD7}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{F93984B1-5FA2-4C92-A7F3-467D0B883FD7}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
