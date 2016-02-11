@@ -15,9 +15,13 @@ namespace ViewSwitcherDemo
 			
 		}
 
+		// Reference: iOS Views - Apple programing guide for iOS
+		// https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/CreatingViews/CreatingViews.html#//apple_ref/doc/uid/TP40009503-CH5-SW47
+		// Espeically look at "Creating and Managing a View Hierarchy"
+
 		partial void UIBarButtonItem13_Activated (UIBarButtonItem sender)
 		{
-			// Create a ViewCoontroller objects if necessary
+			// Create ViewController objects if they don't exist
 			if(blueViewController == null)
 				blueViewController = 
 					(BlueViewController)Storyboard.InstantiateViewController("Blue");
@@ -29,9 +33,9 @@ namespace ViewSwitcherDemo
 			//If the yellow view is displayed, display the Blue view
 			if(yellowViewController.View.Superview != null)
 			{
-				// Unload the yellow view
-				yellowViewController.WillMoveToParentViewController(null);
-				yellowViewController.View.RemoveFromSuperview();
+				// Unload the yellow view from SwitchingVC (this)
+				yellowViewController.WillMoveToParentViewController(null);  // notify the yellow view that it will be removed
+				yellowViewController.View.RemoveFromSuperview();  			// remove the yellow view from 
 				yellowViewController.RemoveFromParentViewController();
 
 				// Load the blue view
