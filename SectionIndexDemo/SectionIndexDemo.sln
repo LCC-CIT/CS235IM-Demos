@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SectionIndexDemo", "SectionIndexDemo\SectionIndexDemo.csproj", "{874868F3-A8C0-4981-B33A-5A33158A74DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{874868F3-A8C0-4981-B33A-5A33158A74DA}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{874868F3-A8C0-4981-B33A-5A33158A74DA}.Debug|iPhone.Build.0 = Debug|iPhone
+		{874868F3-A8C0-4981-B33A-5A33158A74DA}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{874868F3-A8C0-4981-B33A-5A33158A74DA}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{874868F3-A8C0-4981-B33A-5A33158A74DA}.Release|iPhone.ActiveCfg = Release|iPhone
+		{874868F3-A8C0-4981-B33A-5A33158A74DA}.Release|iPhone.Build.0 = Release|iPhone
+		{874868F3-A8C0-4981-B33A-5A33158A74DA}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{874868F3-A8C0-4981-B33A-5A33158A74DA}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
