@@ -16,7 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="297" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="83" y="155" width="224" height="169"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="298" firstItem="297" firstAttribute="width" constant="224"/>
+                                    <constraint id="299" firstItem="297" firstAttribute="height" constant="169"/>
+                                </constraints>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="300" firstItem="297" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="83"/>
+                            <constraint id="301" firstItem="297" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="155"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="DetailView" destination="8bC-Xf-vdC" id="name-outlet-8bC-Xf-vdC"/>
+                        <outlet property="detialLabel" destination="297" id="name-outlet-297"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,6 +58,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue id="292" destination="BYZ-38-t0r" kind="show" identifier="castMemberSegue"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -45,9 +69,7 @@
                         </connections>
                     </tableView>
                     <navigationItem title="Title" id="75" key="navigationItem"/>
-                    <connections>
-                        <segue id="186" destination="BYZ-38-t0r" kind="push" identifier="castMemberSegue"/>
-                    </connections>
+                    <connections/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

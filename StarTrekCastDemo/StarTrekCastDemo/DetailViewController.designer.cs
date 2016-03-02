@@ -14,8 +14,24 @@ namespace StarTrekCastDemo
 	[Register ("DetailViewController")]
 	partial class DetailViewController
 	{
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIView DetailView { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel detialLabel { get; set; }
+
 		void ReleaseDesignerOutlets ()
 		{
+			if (DetailView != null) {
+				DetailView.Dispose ();
+				DetailView = null;
+			}
+			if (detialLabel != null) {
+				detialLabel.Dispose ();
+				detialLabel = null;
+			}
 		}
 	}
 }

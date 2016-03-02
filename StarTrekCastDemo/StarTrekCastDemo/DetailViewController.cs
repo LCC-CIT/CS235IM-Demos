@@ -13,5 +13,12 @@ namespace StarTrekCastDemo
 		{
 		}
 
+		public override void ViewWillAppear (bool animated)
+		{
+			detailLabel.Text = CastInfo;
+
+			base.ViewWillAppear (animated);
+		}
+
 	}
 }
