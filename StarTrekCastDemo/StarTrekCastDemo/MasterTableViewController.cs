@@ -49,5 +49,19 @@ namespace StarTrekCastDemo
 			return cell;
 		}
 
+		public override void PrepareForSegue (UIStoryboardSegue segue, NSObject sender)
+		{
+			if (segue.Identifier == "castMemberSegue") { // set in Storyboard
+				var detailController = segue.DestinationViewController as DetailViewController;
+				if (detailController != null) {
+					//var source = TableView.Source as DwarfDataSource;
+					var rowPath = TableView.IndexPathForSelectedRow;
+					//var item = source.GetItem(rowPath.Row);
+
+					detailController.CastInfo = castInfo [rowPath.Row]; // to be defined on the DetailViewController
+				}
+			}
+		}
+
 	}
 }
