@@ -17,26 +17,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="297" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="83" y="155" width="224" height="169"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="307" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="3">
+                                <rect key="frame" x="219" y="246" width="186" height="98"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <constraints>
-                                    <constraint id="298" firstItem="297" firstAttribute="width" constant="224"/>
-                                    <constraint id="299" firstItem="297" firstAttribute="height" constant="169"/>
+                                    <constraint id="310" firstAttribute="width" constant="186"/>
+                                    <constraint id="311" firstAttribute="height" constant="98"/>
                                 </constraints>
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint id="300" firstItem="297" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="83"/>
-                            <constraint id="301" firstItem="297" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="155"/>
+                            <constraint id="314" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="307" secondAttribute="centerY" constant="5"/>
+                            <constraint id="315" firstItem="307" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="12"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="DetailView" destination="8bC-Xf-vdC" id="name-outlet-8bC-Xf-vdC"/>
-                        <outlet property="detialLabel" destination="297" id="name-outlet-297"/>
+                        <outlet property="detailLabel" destination="307" id="name-outlet-307"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -16,21 +16,21 @@ namespace StarTrekCastDemo
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIView DetailView { get; set; }
+		UILabel detailLabel { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel detialLabel { get; set; }
+		UIView DetailView { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
+			if (detailLabel != null) {
+				detailLabel.Dispose ();
+				detailLabel = null;
+			}
 			if (DetailView != null) {
 				DetailView.Dispose ();
 				DetailView = null;
-			}
-			if (detialLabel != null) {
-				detialLabel.Dispose ();
-				detialLabel = null;
 			}
 		}
 	}

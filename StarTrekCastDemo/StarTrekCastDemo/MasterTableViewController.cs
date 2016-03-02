@@ -15,7 +15,8 @@ namespace StarTrekCastDemo
 			"Leonard Nimoy", "William Shatner",	
 			"DeForest Kelley",	"Nichelle Nichols",
 			"James Doohan", "Eddie Paskey",
-			"George Takei", "Walter Koenig"	};
+			"George Takei", "Walter Koenig",
+			"Majel Barrett", "Grace Lee Whitney"};
 
 		private List<string> castInfo = new List<string> () {
 			"Leonard Nimoy: Mr. Spock (80 episodes, 1966-1986)",
@@ -25,7 +26,9 @@ namespace StarTrekCastDemo
 			"James Doohan: Scott: (66 episodes, 1966-1969)",
 			"Eddie Paskey: Lt. Leslie: (60 episodes, 1966-1968)",
 			"George Takei: Sulu: (52 episodes, 1966-1969)",
-			"Walter Koenig: Chekov (36 episodes, 1967-1969)"
+			"Walter Koenig: Chekov (36 episodes, 1967-1969)",
+			"Majel Barret: Nurse Christine Chapel (36 episodes, 1966-1986)",
+			"Grace Lee Whitney: Yeoman Janice Rand (8 episodes, 1966)"
 		};
 			
 
