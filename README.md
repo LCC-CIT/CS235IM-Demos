@@ -4,6 +4,8 @@ The code was written using Xamarin Studio and requires the Xamarin.iOS library. 
 
 ## Directory of examples:
 ### AutoLayoutDemo
+- AutoLayoutDemo
+- SizeClassDemo
 
 ### LayoutDemo
 
