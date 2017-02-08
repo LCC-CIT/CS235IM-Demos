@@ -15,6 +15,9 @@ The code was written using Xamarin Studio and requires the Xamarin.iOS library. 
 
 ### SizeClassDemo
 
+### VocabQuiz_SizeClasses
+- Just has a baseline wAny hAny layout, ready for us to add another set of constraints in another size class.
+
 ### StarTrekCastDemo
 
 ### ViewSwitcherDemo
