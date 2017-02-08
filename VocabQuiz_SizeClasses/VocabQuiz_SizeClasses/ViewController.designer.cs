@@ -15,6 +15,10 @@ namespace VocabQuiz_SizeClasses
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton AButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel AnswerLabel { get; set; }
 
         [Outlet]
@@ -39,6 +43,11 @@ namespace VocabQuiz_SizeClasses
 
         void ReleaseDesignerOutlets ()
         {
+            if (AButton != null) {
+                AButton.Dispose ();
+                AButton = null;
+            }
+
             if (AnswerLabel != null) {
                 AnswerLabel.Dispose ();
                 AnswerLabel = null;
