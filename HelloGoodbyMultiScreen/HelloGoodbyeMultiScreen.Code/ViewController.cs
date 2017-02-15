@@ -28,27 +28,21 @@ namespace HelloGoodbyMultiScreen
 		partial void TouchUpInsideEachButton(UIButton sender)
 		{
 			userName = NameTextField.Text;
-		}
-
-
-		public override void PrepareForSegue(UIStoryboardSegue segue, Foundation.NSObject sender)
-		{
-			base.PrepareForSegue(segue, sender);
-
 			UIButton button = (UIButton)sender;
-			if (segue.DestinationViewController != null)
+
+			UIViewController controller;
+			if (button.TitleLabel.Text == "Hello")
 			{
-				if (button.TitleLabel.Text == "Hello")
-				{
-					var controller = (HelloViewController)segue.DestinationViewController;
-					controller.UserName = userName;
-				}
-				else
-				{
-					var controller = (GoodbyeViewController)segue.DestinationViewController;
-					controller.UserName = userName;
-				}
+				controller = this.Storyboard.InstantiateViewController("HelloViewController") as HelloViewController;
+				((HelloViewController)controller).UserName = userName;
 			}
+			else
+			{
+				controller = this.Storyboard.InstantiateViewController("GoodbyeViewController") as GoodbyeViewController;
+				((GoodbyeViewController)controller).UserName = userName;
+			}
+			this.NavigationController.PushViewController(controller, true);
+
 		}
 
 	}

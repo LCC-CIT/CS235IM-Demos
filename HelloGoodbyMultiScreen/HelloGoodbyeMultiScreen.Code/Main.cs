@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace HelloGoodbyMultiScreen
+namespace HelloGoodbyeMultiScreen.Code
 {
 	public class Application
 	{

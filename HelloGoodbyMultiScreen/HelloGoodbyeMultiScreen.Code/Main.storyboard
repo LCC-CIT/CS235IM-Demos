@@ -31,7 +31,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="133" destination="88" kind="show"/>
                                     <action selector="TouchUpInsideHelloButton:" destination="BYZ-38-t0r" id="165" eventType="touchUpInside"/>
                                 </connections>
                             </button>
@@ -42,7 +41,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="186" destination="95" kind="show"/>
                                     <action selector="TouchUpInsideHelloButton:" destination="BYZ-38-t0r" id="193" eventType="touchUpInside"/>
                                 </connections>
                             </button>
@@ -78,7 +76,7 @@
         </scene>
         <scene sceneID="87">
             <objects>
-                <viewController id="88" sceneMemberID="viewController" customClass="HelloViewController" title="Hello">
+                <viewController id="88" sceneMemberID="viewController" customClass="HelloViewController" title="Hello" storyboardIdentifier="HelloViewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="85"/>
                         <viewControllerLayoutGuide type="bottom" id="86"/>
@@ -107,7 +105,7 @@
         </scene>
         <scene sceneID="94">
             <objects>
-                <viewController id="95" sceneMemberID="viewController" customClass="GoodbyeViewController" title="Goodbye">
+                <viewController id="95" sceneMemberID="viewController" customClass="GoodbyeViewController" title="Goodbye" storyboardIdentifier="GoodbyeViewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="92"/>
                         <viewControllerLayoutGuide type="bottom" id="93"/>
