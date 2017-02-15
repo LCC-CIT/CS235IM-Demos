@@ -11,6 +11,9 @@ The code was written using Xamarin Studio and requires the Xamarin.iOS library. 
 
 ### RedBlueNavControllerDemo
 
+### HelloGoodbyeMultiScreen
+- Demonstrates using a NavigationController with two Buttons and Segues to launch one of two different secondary scenes
+
 ### SectionIndexDemo
 
 ### SizeClassDemo
