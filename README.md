@@ -27,6 +27,7 @@ Demonstrates using a UINavigationController to navigate between three scenes in 
 
 ### StarTrekCastDemo
 
+___
 
 These apps were written for use with a class I teach at Lane Community College,
 CS235IM, Intermediate Mobile Applications Development: iOS.
