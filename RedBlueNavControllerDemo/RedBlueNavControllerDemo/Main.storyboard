@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="23">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="23">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="22">
             <objects>
                 <navigationController definesPresentationContext="YES" id="23" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="26">
+                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                     </navigationBar>
                     <connections>
                         <segue destination="25" kind="relationship" relationship="rootViewController" id="24"/>
@@ -20,34 +21,32 @@
             </objects>
             <point key="canvasLocation" x="-272" y="119"/>
         </scene>
+        <!--Red Screen-->
         <scene sceneID="28">
             <objects>
-                <viewController id="25" sceneMemberID="viewController" customClass="RedViewController">
+                <viewController id="25" customClass="RedViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="20"/>
                         <viewControllerLayoutGuide type="bottom" id="21"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="30">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="41" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41">
                                 <rect key="frame" x="128" y="248" width="46" height="30"/>
                                 <state key="normal" title="Go to Blue">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="93" y="244" width="100" height="30"/>
-                                </variation>
                                 <connections>
-                                    <segue id="89" destination="37" kind="show"/>
+                                    <segue destination="37" kind="show" id="89"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint id="93" firstItem="41" firstAttribute="centerY" secondItem="30" secondAttribute="centerY" constant="23"/>
-                            <constraint id="94" firstItem="30" firstAttribute="centerX" secondItem="41" secondAttribute="centerX" constant="9"/>
+                            <constraint firstItem="41" firstAttribute="centerY" secondItem="30" secondAttribute="centerY" constant="23" id="93"/>
+                            <constraint firstAttribute="centerX" secondItem="41" secondAttribute="centerX" constant="9" id="94"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Red Screen" id="29"/>
@@ -59,31 +58,32 @@
             </objects>
             <point key="canvasLocation" x="122" y="119"/>
         </scene>
+        <!--Blue Screen (of death)-->
         <scene sceneID="36">
             <objects>
-                <viewController id="37" sceneMemberID="viewController" title="Blue Screen (of death)">
+                <viewController title="Blue Screen (of death)" id="37" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="34"/>
                         <viewControllerLayoutGuide type="bottom" id="35"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="38">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="110" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="110">
                                 <rect key="frame" x="119" y="246" width="90" height="30"/>
                                 <state key="normal" title="Go To Green">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue id="153" destination="106" kind="show"/>
+                                    <segue destination="106" kind="show" id="153"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint id="111" firstItem="110" firstAttribute="centerX" secondItem="38" secondAttribute="centerX"/>
-                            <constraint id="112" firstItem="110" firstAttribute="centerY" secondItem="38" secondAttribute="centerY" constant="21"/>
+                            <constraint firstItem="110" firstAttribute="centerX" secondItem="38" secondAttribute="centerX" id="111"/>
+                            <constraint firstItem="110" firstAttribute="centerY" secondItem="38" secondAttribute="centerY" constant="21" id="112"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -91,17 +91,18 @@
             </objects>
             <point key="canvasLocation" x="499" y="125"/>
         </scene>
+        <!--Green Screen-->
         <scene sceneID="105">
             <objects>
-                <viewController id="106" sceneMemberID="viewController" title="Green Screen">
+                <viewController title="Green Screen" id="106" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="103"/>
                         <viewControllerLayoutGuide type="bottom" id="104"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="107">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0" green="1" blue="0" alpha="1"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="108" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -109,7 +110,4 @@
             <point key="canvasLocation" x="863" y="127"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination"/>
-    </simulatedMetricsContainer>
 </document>
