@@ -9,13 +9,14 @@ The code was written using Xamarin Studio and requires the Xamarin.iOS library. 
 
 ### LayoutDemo
 
-### RedBlueNavControllerDemo
-
 ### HelloGoodbyeMultiScreen
 - **HelloGoodbyeMultiScreen.Segue**  
-Demonstrates using a NavigationController with two Buttons and Segues to launch one of two different secondary scenes.
+Demonstrates using a UINavigationController with two Buttons and Segues to launch one of two different secondary scenes.
 - **HelloGoodbyeMultiScreen.Code**  
 The same as the ohter project, but uses code instead of Segues for invoking the secondary scenes.
+
+### RedBlueNavControllerDemo
+Demonstrates using a UINavigationController to navigate between three scenes in sequence. The three scenes have different colored backgrounds. Users can navigate from red to blue to green and then back up from green to blue to red.
 
 ### SectionIndexDemo
 
@@ -25,8 +26,6 @@ The same as the ohter project, but uses code instead of Segues for invoking the 
 - Just has a baseline wAny hAny layout, ready for us to add another set of constraints in another size class.
 
 ### StarTrekCastDemo
-
-### ViewSwitcherDemo
 
 
 These apps were written for use with a class I teach at Lane Community College,
