@@ -1,12 +1,18 @@
 # Demo apps for CS235IM, iOS App Development
 
 ## Directory of examples:
+### LayoutDemo
+A do-nothing app with two buttons and a label demonstrating the use of Auto-Layout Constraints.
+
 ### AutoLayoutDemo
 - AutoLayoutDemo
 - SizeClassDemo
 
-### LayoutDemo
-A do-nothing app with two buttons and a label demonstrating the use of Auto-Layout Constraints.
+### SizeClassDemo
+A four-function calculator demonstrating the use of Size-Classes.
+
+### VocabQuiz_SizeClasses
+Just has a baseline wAny hAny layout, ready for us to add another set of constraints in another size class. Not finished.
 
 ### HelloGoodbyeMultiScreen
 - **HelloGoodbyeMultiScreen.Segue**  
@@ -19,12 +25,6 @@ Demonstrates using a UINavigationController to navigate between three scenes in 
 
 ### SectionIndexDemo
 An app that shows a table of plants with an alphabetic section index on the right side. Clicking on a plant name pops up an alert with information about the plant.
-
-### SizeClassDemo
-A four-function calculator demonstrating the use of Size-Classes.
-
-### VocabQuiz_SizeClasses
-Just has a baseline wAny hAny layout, ready for us to add another set of constraints in another size class. Not finished.
 
 ### StarTrekCastDemo
 Uses a UITableView and a UIDetialView to create a master-detail app.
