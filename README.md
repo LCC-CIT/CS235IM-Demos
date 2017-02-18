@@ -12,7 +12,10 @@ The code was written using Xamarin Studio and requires the Xamarin.iOS library. 
 ### RedBlueNavControllerDemo
 
 ### HelloGoodbyeMultiScreen
-- Demonstrates using a NavigationController with two Buttons and Segues to launch one of two different secondary scenes
+- HelloGoodbyeMultiScreen.Segue
+Demonstrates using a NavigationController with two Buttons and Segues to launch one of two different secondary scenes.
+- HelloGoodbyeMultiScreen.Code
+The same as the ohter project, but uses code instead of Segues for invoking the secondary scenes.
 
 ### SectionIndexDemo
 
