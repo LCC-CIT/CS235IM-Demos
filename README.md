@@ -23,10 +23,10 @@ Demonstrates using a UINavigationController to navigate between three scenes in 
 ### SizeClassDemo
 
 ### VocabQuiz_SizeClasses
-- Just has a baseline wAny hAny layout, ready for us to add another set of constraints in another size class.
+Just has a baseline wAny hAny layout, ready for us to add another set of constraints in another size class. Not finished.
 
 ### StarTrekCastDemo
-
+Uses a UITableView and a UIDetialView to create a master-detail app.
 ___
 
 These apps were written for use with a class I teach at Lane Community College,
