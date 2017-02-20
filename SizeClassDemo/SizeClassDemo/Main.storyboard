@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,534 +17,425 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="27" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27">
                                 <rect key="frame" x="198" y="261" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="263"/>
+                                    <constraint firstAttribute="width" constant="46" id="266"/>
+                                </constraints>
                                 <state key="normal" title="1">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="OneButton_TouchUpInside:" destination="BYZ-38-t0r" id="29" eventType="touchUpInside"/>
+                                    <action selector="OneButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="29"/>
                                 </connections>
-                                <constraints>
-                                    <constraint id="263" firstItem="27" firstAttribute="height" constant="30"/>
-                                    <constraint id="266" firstAttribute="width" constant="46"/>
-                                </constraints>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="58" y="201" width="46" height="30"/>
-                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="28" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28">
                                 <rect key="frame" x="252" y="261" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="271"/>
+                                    <constraint firstAttribute="height" constant="30" id="274"/>
+                                </constraints>
                                 <state key="normal" title="2">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="BYZ-38-t0r" id="39" eventType="touchUpInside"/>
+                                    <action selector="TwoButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="39"/>
                                 </connections>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="112" y="201" width="46" height="30"/>
-                                </variation>
-                                <constraints>
-                                    <constraint id="271" firstAttribute="width" constant="46"/>
-                                    <constraint id="274" firstItem="28" firstAttribute="height" constant="30"/>
-                                </constraints>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="30" translatesAutoresizingMaskIntoConstraints="NO">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="30">
                                 <rect key="frame" x="198" y="150.5" width="154" height="21"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="1" alpha="1"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="358">
+                                        <variation key="heightClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="154" id="359"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="58" y="90.5" width="154" height="21"/>
-                                </variation>
-                                <constraints>
-                                    <constraint id="358" firstItem="30" firstAttribute="height" constant="21">
-                                        <variation key="heightClass=compact" constant="30"/>
-                                    </constraint>
-                                    <constraint id="359" firstItem="30" firstAttribute="width" constant="154"/>
-                                </constraints>
-                                <variation key="heightClass=compact">
-                                    <rect key="frame" x="198" y="45" width="154" height="30"/>
-                                </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="34" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34">
                                 <rect key="frame" x="306" y="299" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="293"/>
+                                    <constraint firstAttribute="width" constant="46" id="294"/>
+                                </constraints>
                                 <state key="normal" title="=">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="UIButton28_TouchUpInside:" destination="36" id="35" eventType="touchUpInside"/>
-                                    <action selector="EqualsButton_TouchUpInside:" destination="BYZ-38-t0r" id="102" eventType="touchUpInside"/>
-                                </connections>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="166" y="239" width="46" height="30"/>
                                     <mask key="constraints">
                                         <exclude reference="293"/>
                                     </mask>
                                 </variation>
-                                <constraints>
-                                    <constraint id="293" firstItem="34" firstAttribute="height" constant="30"/>
-                                    <constraint id="294" firstItem="34" firstAttribute="width" constant="46"/>
-                                </constraints>
-                                <variation key="heightClass=compact">
-                                    <rect key="frame" x="306" y="199" width="46" height="30"/>
-                                </variation>
+                                <connections>
+                                    <action selector="EqualsButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="102"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="43" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43">
                                 <rect key="frame" x="306" y="185" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="203"/>
+                                    <constraint firstAttribute="width" constant="46" id="204"/>
+                                </constraints>
                                 <state key="normal" title="9">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="45" id="44" eventType="touchUpInside"/>
-                                    <action selector="NineButton_TouchUpInside:" destination="BYZ-38-t0r" id="88" eventType="touchUpInside"/>
+                                    <action selector="NineButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="88"/>
                                 </connections>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="166" y="125" width="46" height="30"/>
-                                </variation>
-                                <constraints>
-                                    <constraint id="203" firstItem="43" firstAttribute="height" constant="30"/>
-                                    <constraint id="204" firstItem="43" firstAttribute="width" constant="46"/>
-                                </constraints>
-                                <variation key="heightClass=compact">
-                                    <rect key="frame" x="306" y="85" width="46" height="30"/>
-                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="46" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46">
                                 <rect key="frame" x="198" y="223" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="250"/>
+                                    <constraint firstAttribute="height" constant="30" id="251"/>
+                                </constraints>
                                 <state key="normal" title="4">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="48" id="47" eventType="touchUpInside"/>
-                                    <action selector="FourButton_TouchUpInside:" destination="BYZ-38-t0r" id="84" eventType="touchUpInside"/>
+                                    <action selector="FourButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="84"/>
                                 </connections>
-                                <constraints>
-                                    <constraint id="250" firstAttribute="width" constant="46"/>
-                                    <constraint id="251" firstItem="46" firstAttribute="height" constant="30"/>
-                                </constraints>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="58" y="163" width="46" height="30"/>
-                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="49" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49">
                                 <rect key="frame" x="252" y="223" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="254"/>
+                                    <constraint firstAttribute="width" constant="46" id="255"/>
+                                </constraints>
                                 <state key="normal" title="5">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="51" id="50" eventType="touchUpInside"/>
-                                    <action selector="FiveButton_TouchUpInside:" destination="BYZ-38-t0r" id="85" eventType="touchUpInside"/>
+                                    <action selector="FiveButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="85"/>
                                 </connections>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="112" y="163" width="46" height="30"/>
-                                </variation>
-                                <constraints>
-                                    <constraint id="254" firstItem="49" firstAttribute="height" constant="30"/>
-                                    <constraint id="255" firstItem="49" firstAttribute="width" constant="46"/>
-                                </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="52" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52">
                                 <rect key="frame" x="306" y="223" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="256"/>
+                                    <constraint firstAttribute="width" constant="46" id="257"/>
+                                </constraints>
                                 <state key="normal" title="6">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="54" id="53" eventType="touchUpInside"/>
-                                    <action selector="SixButton_TouchUpInside:" destination="BYZ-38-t0r" id="86" eventType="touchUpInside"/>
+                                    <action selector="SixButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="86"/>
                                 </connections>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="166" y="163" width="46" height="30"/>
-                                </variation>
-                                <constraints>
-                                    <constraint id="256" firstItem="52" firstAttribute="height" constant="30"/>
-                                    <constraint id="257" firstItem="52" firstAttribute="width" constant="46"/>
-                                </constraints>
-                                <variation key="heightClass=compact">
-                                    <rect key="frame" x="306" y="123" width="46" height="30"/>
-                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="55" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55">
                                 <rect key="frame" x="252" y="185" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="205"/>
+                                    <constraint firstAttribute="width" constant="46" id="206"/>
+                                </constraints>
                                 <state key="normal" title="8">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="57" id="56" eventType="touchUpInside"/>
-                                    <action selector="EightButton_TouchUpInside:" destination="BYZ-38-t0r" id="120" eventType="touchUpInside"/>
+                                    <action selector="EightButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="120"/>
                                 </connections>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="112" y="125" width="46" height="30"/>
-                                </variation>
-                                <constraints>
-                                    <constraint id="205" firstItem="55" firstAttribute="height" constant="30"/>
-                                    <constraint id="206" firstItem="55" firstAttribute="width" constant="46"/>
-                                </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="58" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58">
                                 <rect key="frame" x="199" y="185" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="210"/>
+                                    <constraint firstAttribute="width" constant="46" id="211"/>
+                                </constraints>
                                 <state key="normal" title="7">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="60" id="59" eventType="touchUpInside"/>
-                                    <action selector="SevenButton_TouchUpInside:" destination="BYZ-38-t0r" id="87" eventType="touchUpInside"/>
+                                    <action selector="SevenButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="87"/>
                                 </connections>
-                                <constraints>
-                                    <constraint id="210" firstItem="58" firstAttribute="height" constant="30"/>
-                                    <constraint id="211" firstItem="58" firstAttribute="width" constant="46"/>
-                                </constraints>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="59" y="125" width="46" height="30"/>
-                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="61" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61">
                                 <rect key="frame" x="306" y="261" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="277"/>
+                                    <constraint firstAttribute="height" constant="30" id="280"/>
+                                </constraints>
                                 <state key="normal" title="3">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="63" id="62" eventType="touchUpInside"/>
-                                    <action selector="ThreeButton_TouchUpInside:" destination="BYZ-38-t0r" id="83" eventType="touchUpInside"/>
+                                    <action selector="ThreeButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="83"/>
                                 </connections>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="166" y="201" width="46" height="30"/>
-                                </variation>
-                                <constraints>
-                                    <constraint id="277" firstAttribute="width" constant="46"/>
-                                    <constraint id="280" firstItem="61" firstAttribute="height" constant="30"/>
-                                </constraints>
-                                <variation key="heightClass=compact">
-                                    <rect key="frame" x="306" y="161" width="46" height="30"/>
-                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="64" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64">
                                 <rect key="frame" x="252" y="299" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="295"/>
+                                    <constraint firstAttribute="width" constant="46" id="296"/>
+                                </constraints>
                                 <state key="normal" title=".">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="66" id="65" eventType="touchUpInside"/>
-                                    <action selector="DecimalButton_TouchUpInside:" destination="BYZ-38-t0r" id="119" eventType="touchUpInside"/>
+                                    <action selector="DecimalButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="119"/>
                                 </connections>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="112" y="239" width="46" height="30"/>
-                                </variation>
-                                <constraints>
-                                    <constraint id="295" firstItem="64" firstAttribute="height" constant="30"/>
-                                    <constraint id="296" firstItem="64" firstAttribute="width" constant="46"/>
-                                </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="67" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67">
                                 <rect key="frame" x="198" y="299" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
-                                <state key="normal" title="0">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="69" id="68" eventType="touchUpInside"/>
-                                    <action selector="ZeroButton_TouchUpInside:" destination="BYZ-38-t0r" id="82" eventType="touchUpInside"/>
-                                </connections>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint id="300" firstAttribute="width" constant="46"/>
-                                    <constraint id="303" firstItem="67" firstAttribute="height" constant="30"/>
+                                    <constraint firstAttribute="width" constant="46" id="300"/>
+                                    <constraint firstAttribute="height" constant="30" id="303"/>
                                 </constraints>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="58" y="239" width="46" height="30"/>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="70" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                <rect key="frame" x="360" y="299" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
-                                <state key="normal" title="+">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="0">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="72" id="71" eventType="touchUpInside"/>
-                                    <action selector="PlusButton_TouchUpInside:" destination="BYZ-38-t0r" id="89" eventType="touchUpInside"/>
+                                    <action selector="ZeroButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="82"/>
                                 </connections>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="83" y="284" width="46" height="30"/>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <rect key="frame" x="372" y="199" width="46" height="30"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact">
-                                    <rect key="frame" x="312" y="159" width="46" height="30"/>
-                                </variation>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="83" y="284" width="46" height="30"/>
-                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70">
+                                <rect key="frame" x="360" y="299" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint id="368" firstItem="70" firstAttribute="height" constant="30"/>
-                                    <constraint id="369" firstItem="70" firstAttribute="width" constant="46">
+                                    <constraint firstAttribute="height" constant="30" id="368"/>
+                                    <constraint firstAttribute="width" constant="46" id="369">
                                         <variation key="heightClass=compact" constant="46"/>
                                         <variation key="heightClass=regular-widthClass=compact" constant="46"/>
                                     </constraint>
                                 </constraints>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlusButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="73" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73">
                                 <rect key="frame" x="360" y="261" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="283"/>
+                                    <constraint firstAttribute="height" constant="30" id="286"/>
+                                </constraints>
                                 <state key="normal" title="-">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="75" id="74" eventType="touchUpInside"/>
-                                    <action selector="MinusButton_TouchUpInside:" destination="BYZ-38-t0r" id="123" eventType="touchUpInside"/>
-                                </connections>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="137" y="284" width="46" height="30"/>
-                                    <mask key="constraints">
-                                        <exclude reference="286"/>
-                                    </mask>
-                                </variation>
-                                <constraints>
-                                    <constraint id="283" firstAttribute="width" constant="46"/>
-                                    <constraint id="286" firstItem="73" firstAttribute="height" constant="30"/>
-                                </constraints>
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="286"/>
                                     </mask>
-                                    <rect key="frame" x="372" y="161" width="46" height="30"/>
                                 </variation>
-                                <variation key="heightClass=regular">
-                                    <rect key="frame" x="137" y="284" width="46" height="30"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="286"/>
+                                    </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="MinusButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="123"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="76" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76">
                                 <rect key="frame" x="360" y="223" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="260"/>
+                                    <constraint firstAttribute="width" constant="46" id="261"/>
+                                </constraints>
                                 <state key="normal" title="X">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="78" id="77" eventType="touchUpInside"/>
-                                    <action selector="MultiplyButton_TouchUpInside:" destination="BYZ-38-t0r" id="124" eventType="touchUpInside"/>
-                                </connections>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="88" y="322" width="46" height="30"/>
-                                    <mask key="constraints">
-                                        <exclude reference="260"/>
-                                    </mask>
-                                </variation>
-                                <constraints>
-                                    <constraint id="260" firstItem="76" firstAttribute="height" constant="30"/>
-                                    <constraint id="261" firstItem="76" firstAttribute="width" constant="46"/>
-                                </constraints>
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="260"/>
                                     </mask>
-                                    <rect key="frame" x="372" y="123" width="46" height="30"/>
                                 </variation>
-                                <variation key="heightClass=regular">
-                                    <rect key="frame" x="88" y="322" width="46" height="30"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="260"/>
+                                    </mask>
                                 </variation>
-                                <variation key="heightClass=compact-widthClass=compact">
-                                    <rect key="frame" x="312" y="83" width="46" height="30"/>
-                                </variation>
+                                <connections>
+                                    <action selector="MultiplyButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="124"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="79" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79">
                                 <rect key="frame" x="360" y="185" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="214"/>
+                                    <constraint firstAttribute="height" constant="30" id="215"/>
+                                </constraints>
                                 <state key="normal" title="/">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="81" id="80" eventType="touchUpInside"/>
-                                    <action selector="DivideButton_TouchUpInside:" destination="BYZ-38-t0r" id="125" eventType="touchUpInside"/>
-                                </connections>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="137" y="322" width="46" height="30"/>
-                                    <mask key="constraints">
-                                        <exclude reference="215"/>
-                                    </mask>
-                                </variation>
-                                <constraints>
-                                    <constraint id="214" firstItem="79" firstAttribute="width" constant="46"/>
-                                    <constraint id="215" firstItem="79" firstAttribute="height" constant="30"/>
-                                </constraints>
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="215"/>
                                     </mask>
-                                    <rect key="frame" x="372" y="85" width="46" height="30"/>
                                 </variation>
-                                <variation key="heightClass=regular">
-                                    <rect key="frame" x="137" y="322" width="46" height="30"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="215"/>
+                                    </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="DivideButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="125"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="111" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="111">
                                 <rect key="frame" x="360" y="147" width="46" height="30"/>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="364"/>
+                                    <constraint firstAttribute="width" constant="46" id="365"/>
+                                </constraints>
                                 <state key="normal" title="C">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="TwoButton_TouchUpInside:" destination="113" id="112" eventType="touchUpInside"/>
-                                    <action selector="ClearButton_TouchUpInside:" destination="BYZ-38-t0r" id="116" eventType="touchUpInside"/>
+                                    <action selector="ClearButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="116"/>
                                 </connections>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="112" y="360" width="46" height="30"/>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <rect key="frame" x="372" y="45" width="46" height="30"/>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <rect key="frame" x="112" y="360" width="46" height="30"/>
-                                </variation>
-                                <constraints>
-                                    <constraint id="364" firstItem="111" firstAttribute="height" constant="30"/>
-                                    <constraint id="365" firstItem="111" firstAttribute="width" constant="46"/>
-                                </constraints>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <rect key="frame" x="192" y="280" width="46" height="30"/>
-                                </variation>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint id="168" firstItem="34" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="29"/>
-                            <constraint id="174" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="55" secondAttribute="centerX" constant="25"/>
-                            <constraint id="176" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="49" secondAttribute="centerX" constant="25"/>
-                            <constraint id="181" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="64" secondAttribute="centerX" constant="25"/>
-                            <constraint id="182" firstItem="64" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="14"/>
-                            <constraint id="185" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="55" secondAttribute="centerY" constant="100"/>
-                            <constraint id="186" firstItem="34" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="14"/>
-                            <constraint id="189" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="52" secondAttribute="centerY" constant="62"/>
-                            <constraint id="195" firstItem="43" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="29"/>
-                            <constraint id="196" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="43" secondAttribute="centerY" constant="100"/>
-                            <constraint id="201" firstItem="52" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="29"/>
-                            <constraint id="202" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="49" secondAttribute="centerY" constant="62"/>
-                            <constraint id="252" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="46" secondAttribute="centerY" constant="62"/>
-                            <constraint id="253" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="46" secondAttribute="centerX" constant="79"/>
-                            <constraint id="267" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="27" secondAttribute="centerY" constant="24"/>
-                            <constraint id="268" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="27" secondAttribute="centerX" constant="79"/>
-                            <constraint id="272" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="28" secondAttribute="centerX" constant="25"/>
-                            <constraint id="273" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="28" secondAttribute="centerY" constant="24"/>
-                            <constraint id="278" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="61" secondAttribute="centerY" constant="24"/>
-                            <constraint id="279" firstItem="61" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="29"/>
-                            <constraint id="301" firstItem="67" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="14"/>
-                            <constraint id="302" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="67" secondAttribute="centerX" constant="79"/>
-                            <constraint id="314" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="58" secondAttribute="centerY" constant="100"/>
-                            <constraint id="315" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="58" secondAttribute="centerX" constant="78"/>
-                            <constraint id="356" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="30" secondAttribute="centerX" constant="25"/>
-                            <constraint id="357" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="30" secondAttribute="centerY" constant="139">
+                            <constraint firstItem="34" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="29" id="168"/>
+                            <constraint firstAttribute="centerX" secondItem="55" secondAttribute="centerX" constant="25" id="174"/>
+                            <constraint firstAttribute="centerX" secondItem="49" secondAttribute="centerX" constant="25" id="176"/>
+                            <constraint firstAttribute="centerX" secondItem="64" secondAttribute="centerX" constant="25" id="181"/>
+                            <constraint firstItem="64" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="14" id="182"/>
+                            <constraint firstAttribute="centerY" secondItem="55" secondAttribute="centerY" constant="100" id="185"/>
+                            <constraint firstItem="34" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="14" id="186"/>
+                            <constraint firstAttribute="centerY" secondItem="52" secondAttribute="centerY" constant="62" id="189"/>
+                            <constraint firstItem="43" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="29" id="195"/>
+                            <constraint firstAttribute="centerY" secondItem="43" secondAttribute="centerY" constant="100" id="196"/>
+                            <constraint firstItem="52" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="29" id="201"/>
+                            <constraint firstAttribute="centerY" secondItem="49" secondAttribute="centerY" constant="62" id="202"/>
+                            <constraint firstAttribute="centerY" secondItem="46" secondAttribute="centerY" constant="62" id="252"/>
+                            <constraint firstAttribute="centerX" secondItem="46" secondAttribute="centerX" constant="79" id="253"/>
+                            <constraint firstAttribute="centerY" secondItem="27" secondAttribute="centerY" constant="24" id="267"/>
+                            <constraint firstAttribute="centerX" secondItem="27" secondAttribute="centerX" constant="79" id="268"/>
+                            <constraint firstAttribute="centerX" secondItem="28" secondAttribute="centerX" constant="25" id="272"/>
+                            <constraint firstAttribute="centerY" secondItem="28" secondAttribute="centerY" constant="24" id="273"/>
+                            <constraint firstAttribute="centerY" secondItem="61" secondAttribute="centerY" constant="24" id="278"/>
+                            <constraint firstItem="61" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="29" id="279"/>
+                            <constraint firstItem="67" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="14" id="301"/>
+                            <constraint firstAttribute="centerX" secondItem="67" secondAttribute="centerX" constant="79" id="302"/>
+                            <constraint firstAttribute="centerY" secondItem="58" secondAttribute="centerY" constant="100" id="314"/>
+                            <constraint firstAttribute="centerX" secondItem="58" secondAttribute="centerX" constant="78" id="315"/>
+                            <constraint firstAttribute="centerX" secondItem="30" secondAttribute="centerX" constant="25" id="356"/>
+                            <constraint firstAttribute="centerY" secondItem="30" secondAttribute="centerY" constant="139" id="357">
                                 <variation key="heightClass=compact" constant="140"/>
                             </constraint>
-                            <constraint id="366" firstItem="111" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="95"/>
-                            <constraint id="367" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="111" secondAttribute="centerY" constant="138">
+                            <constraint firstItem="111" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="95" id="366"/>
+                            <constraint firstAttribute="centerY" secondItem="111" secondAttribute="centerY" constant="138" id="367">
                                 <variation key="heightClass=compact" constant="140"/>
                             </constraint>
-                            <constraint id="370" firstItem="73" firstAttribute="centerX" secondItem="70" secondAttribute="centerX"/>
-                            <constraint id="371" firstItem="76" firstAttribute="centerX" secondItem="70" secondAttribute="centerX"/>
-                            <constraint id="372" firstItem="79" firstAttribute="centerX" secondItem="70" secondAttribute="centerX"/>
-                            <constraint id="373" firstItem="111" firstAttribute="centerX" secondItem="70" secondAttribute="centerX"/>
-                            <constraint id="378" firstItem="43" firstAttribute="centerY" secondItem="79" secondAttribute="centerY"/>
-                            <constraint id="379" firstItem="52" firstAttribute="centerY" secondItem="76" secondAttribute="centerY"/>
-                            <constraint id="380" firstItem="61" firstAttribute="centerY" secondItem="73" secondAttribute="centerY"/>
-                            <constraint id="381" firstItem="34" firstAttribute="centerY" secondItem="70" secondAttribute="centerY"/>
-                            <constraint id="396" firstItem="70" firstAttribute="centerY" secondItem="73" secondAttribute="top" constant="15"/>
-                            <constraint id="397" firstItem="73" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="59"/>
-                            <constraint id="398" firstItem="73" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="399" firstItem="79" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="97"/>
-                            <constraint id="400" firstItem="79" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="401" firstItem="76" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="97"/>
-                            <constraint id="402" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="76" secondAttribute="centerX" constant="49"/>
-                            <constraint id="403" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="111" secondAttribute="centerX" constant="25"/>
-                            <constraint id="404" firstItem="111" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="135"/>
-                            <constraint id="407" firstItem="70" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="59"/>
-                            <constraint id="408" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="70" secondAttribute="centerX" constant="54"/>
+                            <constraint firstItem="73" firstAttribute="centerX" secondItem="70" secondAttribute="centerX" id="370"/>
+                            <constraint firstItem="76" firstAttribute="centerX" secondItem="70" secondAttribute="centerX" id="371"/>
+                            <constraint firstItem="79" firstAttribute="centerX" secondItem="70" secondAttribute="centerX" id="372"/>
+                            <constraint firstItem="111" firstAttribute="centerX" secondItem="70" secondAttribute="centerX" id="373"/>
+                            <constraint firstItem="43" firstAttribute="centerY" secondItem="79" secondAttribute="centerY" id="378"/>
+                            <constraint firstItem="52" firstAttribute="centerY" secondItem="76" secondAttribute="centerY" id="379"/>
+                            <constraint firstItem="61" firstAttribute="centerY" secondItem="73" secondAttribute="centerY" id="380"/>
+                            <constraint firstItem="34" firstAttribute="centerY" secondItem="70" secondAttribute="centerY" id="381"/>
+                            <constraint firstItem="70" firstAttribute="centerY" secondItem="73" secondAttribute="top" constant="15" id="396"/>
+                            <constraint firstItem="73" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="59" id="397"/>
+                            <constraint firstItem="73" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="398"/>
+                            <constraint firstItem="79" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="97" id="399"/>
+                            <constraint firstItem="79" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="400"/>
+                            <constraint firstItem="76" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="97" id="401"/>
+                            <constraint firstAttribute="centerX" secondItem="76" secondAttribute="centerX" constant="49" id="402"/>
+                            <constraint firstAttribute="centerX" secondItem="111" secondAttribute="centerX" constant="25" id="403"/>
+                            <constraint firstItem="111" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="135" id="404"/>
+                            <constraint firstItem="70" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="59" id="407"/>
+                            <constraint firstAttribute="centerX" secondItem="70" secondAttribute="centerX" constant="54" id="408"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="366"/>
-                                <exclude reference="367"/>
-                                <exclude reference="370"/>
-                                <exclude reference="371"/>
-                                <exclude reference="372"/>
-                                <exclude reference="373"/>
                                 <exclude reference="378"/>
                                 <exclude reference="379"/>
-                                <exclude reference="380"/>
-                                <exclude reference="381"/>
-                                <exclude reference="396"/>
-                                <exclude reference="397"/>
-                                <exclude reference="398"/>
-                                <exclude reference="399"/>
-                                <exclude reference="400"/>
-                                <exclude reference="401"/>
-                                <exclude reference="402"/>
+                                <exclude reference="366"/>
+                                <exclude reference="367"/>
+                                <exclude reference="373"/>
                                 <exclude reference="403"/>
                                 <exclude reference="404"/>
+                                <exclude reference="380"/>
+                                <exclude reference="372"/>
+                                <exclude reference="399"/>
+                                <exclude reference="400"/>
+                                <exclude reference="371"/>
+                                <exclude reference="401"/>
+                                <exclude reference="402"/>
+                                <exclude reference="381"/>
+                                <exclude reference="370"/>
+                                <exclude reference="397"/>
+                                <exclude reference="398"/>
+                                <exclude reference="396"/>
                                 <exclude reference="407"/>
                                 <exclude reference="408"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <include reference="366"/>
-                                <include reference="367"/>
-                                <include reference="370"/>
-                                <include reference="371"/>
-                                <include reference="372"/>
-                                <include reference="373"/>
                                 <include reference="378"/>
                                 <include reference="379"/>
+                                <include reference="366"/>
+                                <include reference="367"/>
+                                <include reference="373"/>
                                 <include reference="380"/>
+                                <include reference="372"/>
+                                <include reference="371"/>
                                 <include reference="381"/>
+                                <include reference="370"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="constraints">
-                                <include reference="396"/>
-                                <include reference="397"/>
-                                <include reference="398"/>
+                                <include reference="403"/>
+                                <include reference="404"/>
                                 <include reference="399"/>
                                 <include reference="400"/>
                                 <include reference="401"/>
                                 <include reference="402"/>
-                                <include reference="403"/>
-                                <include reference="404"/>
+                                <include reference="397"/>
+                                <include reference="398"/>
+                                <include reference="396"/>
                                 <include reference="407"/>
                                 <include reference="408"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="oneButton" destination="27" id="name-outlet-27"/>
+                        <outlet property="clearButton" destination="111" id="name-outlet-111"/>
+                        <outlet property="decimalButton" destination="64" id="name-outlet-64"/>
                         <outlet property="displayLabel" destination="30" id="name-outlet-30"/>
+                        <outlet property="divideButton" destination="79" id="name-outlet-79"/>
+                        <outlet property="eightButton" destination="55" id="name-outlet-55"/>
                         <outlet property="equalsButton" destination="34" id="name-outlet-34"/>
-                        <outlet property="twoButton" destination="28" id="name-outlet-28"/>
-                        <outlet property="plusButton" destination="70" id="name-outlet-70"/>
+                        <outlet property="fiveButton" destination="49" id="name-outlet-49"/>
+                        <outlet property="fourButton" destination="46" id="name-outlet-46"/>
                         <outlet property="minusButton" destination="73" id="name-outlet-73"/>
                         <outlet property="multiplyButton" destination="76" id="name-outlet-76"/>
-                        <outlet property="divideButton" destination="79" id="name-outlet-79"/>
-                        <outlet property="zeroButton" destination="67" id="name-outlet-67"/>
-                        <outlet property="decimalButton" destination="64" id="name-outlet-64"/>
-                        <outlet property="threeButton" destination="61" id="name-outlet-61"/>
-                        <outlet property="fourButton" destination="46" id="name-outlet-46"/>
-                        <outlet property="fiveButton" destination="49" id="name-outlet-49"/>
-                        <outlet property="sixButton" destination="52" id="name-outlet-52"/>
-                        <outlet property="sevenButton" destination="58" id="name-outlet-58"/>
-                        <outlet property="eightButton" destination="55" id="name-outlet-55"/>
                         <outlet property="nineButton" destination="43" id="name-outlet-43"/>
-                        <outlet property="clearButton" destination="111" id="name-outlet-111"/>
+                        <outlet property="oneButton" destination="27" id="name-outlet-27"/>
+                        <outlet property="plusButton" destination="70" id="name-outlet-70"/>
+                        <outlet property="sevenButton" destination="58" id="name-outlet-58"/>
+                        <outlet property="sixButton" destination="52" id="name-outlet-52"/>
+                        <outlet property="threeButton" destination="61" id="name-outlet-61"/>
+                        <outlet property="twoButton" destination="28" id="name-outlet-28"/>
+                        <outlet property="zeroButton" destination="67" id="name-outlet-67"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -550,8 +443,4 @@
             <point key="canvasLocation" x="96" y="-32"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination"/>
-        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
-    </simulatedMetricsContainer>
 </document>
