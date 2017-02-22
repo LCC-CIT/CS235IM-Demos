@@ -112,10 +112,6 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="ColumnLabel03.cs" />
-    <Compile Include="ColumnLabel03.designer.cs">
-      <DependentUpon>ColumnLabel03.cs</DependentUpon>
-    </Compile>
     <Compile Include="GameLogic.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathGame", "MathGame\MathGame.csproj", "{A54523E9-733F-4C40-ACEF-941DEED1DB4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathGame.Tabbed", "MathGame.Tabbed\MathGame.Tabbed.csproj", "{B01F4DDD-5405-4599-A495-42533C1A66CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -19,5 +21,13 @@ Global
 		{A54523E9-733F-4C40-ACEF-941DEED1DB4F}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{A54523E9-733F-4C40-ACEF-941DEED1DB4F}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{A54523E9-733F-4C40-ACEF-941DEED1DB4F}.Debug|iPhone.Build.0 = Debug|iPhone
+		{B01F4DDD-5405-4599-A495-42533C1A66CA}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{B01F4DDD-5405-4599-A495-42533C1A66CA}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{B01F4DDD-5405-4599-A495-42533C1A66CA}.Release|iPhone.ActiveCfg = Release|iPhone
+		{B01F4DDD-5405-4599-A495-42533C1A66CA}.Release|iPhone.Build.0 = Release|iPhone
+		{B01F4DDD-5405-4599-A495-42533C1A66CA}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{B01F4DDD-5405-4599-A495-42533C1A66CA}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{B01F4DDD-5405-4599-A495-42533C1A66CA}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{B01F4DDD-5405-4599-A495-42533C1A66CA}.Debug|iPhone.Build.0 = Debug|iPhone
 	EndGlobalSection
 EndGlobal

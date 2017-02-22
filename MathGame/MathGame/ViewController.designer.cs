@@ -51,34 +51,6 @@ namespace MathGame
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton Button10 { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton Button11 { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton Button12 { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton Button13 { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton Button14 { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton Button15 { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton Button16 { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel ColumnLabel01 { get; set; }
 
         [Outlet]
@@ -88,10 +60,6 @@ namespace MathGame
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel ColumnLabel03 { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel ColumnLabel04 { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -116,10 +84,6 @@ namespace MathGame
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel RowLabel03 { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel RowLabel04 { get; set; }
 
         [Action ("TouchUpInsideGridButton:")]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -176,41 +140,6 @@ namespace MathGame
                 Button09 = null;
             }
 
-            if (Button10 != null) {
-                Button10.Dispose ();
-                Button10 = null;
-            }
-
-            if (Button11 != null) {
-                Button11.Dispose ();
-                Button11 = null;
-            }
-
-            if (Button12 != null) {
-                Button12.Dispose ();
-                Button12 = null;
-            }
-
-            if (Button13 != null) {
-                Button13.Dispose ();
-                Button13 = null;
-            }
-
-            if (Button14 != null) {
-                Button14.Dispose ();
-                Button14 = null;
-            }
-
-            if (Button15 != null) {
-                Button15.Dispose ();
-                Button15 = null;
-            }
-
-            if (Button16 != null) {
-                Button16.Dispose ();
-                Button16 = null;
-            }
-
             if (ColumnLabel01 != null) {
                 ColumnLabel01.Dispose ();
                 ColumnLabel01 = null;
@@ -224,11 +153,6 @@ namespace MathGame
             if (ColumnLabel03 != null) {
                 ColumnLabel03.Dispose ();
                 ColumnLabel03 = null;
-            }
-
-            if (ColumnLabel04 != null) {
-                ColumnLabel04.Dispose ();
-                ColumnLabel04 = null;
             }
 
             if (MessageLabel != null) {
@@ -259,11 +183,6 @@ namespace MathGame
             if (RowLabel03 != null) {
                 RowLabel03.Dispose ();
                 RowLabel03 = null;
-            }
-
-            if (RowLabel04 != null) {
-                RowLabel04.Dispose ();
-                RowLabel04 = null;
             }
         }
     }

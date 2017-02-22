@@ -3,13 +3,15 @@ namespace MathGame
 {
 	public class GameLogic
 	{
-		const int ROWS = 4, COLUMNS = 4;
+		const int ROWS = 3, COLUMNS = 3;
 		private int[,] gameGrid = new int[ROWS, COLUMNS];   // 2D array representing the grid of buttons
 		private bool[,] openGrid = new bool[ROWS, COLUMNS];   // keep track of which squares have been filled
 		private Random rand = new Random();  // Random number generator
 		private int numberToPlace = 0;
+		private int matchesMade = 0;
 
 		public string NumberToPlace { get { return numberToPlace.ToString(); } }
+		public bool Done { get {return matchesMade == ROWS * COLUMNS;} }
 
 		public void NewGame()
 		{
@@ -18,7 +20,7 @@ namespace MathGame
 			{
 				for (int j = 0; j < COLUMNS; j++)
 				{
-					gameGrid[i, j] = rand.Next(1, 9);
+					gameGrid[i, j] = rand.Next(1, 10);
 				}
 			}
 
@@ -60,8 +62,10 @@ namespace MathGame
 			int column = (buttonNumber - 1) % ROWS;
 			bool isMatch = gameGrid[row, column] == numberToPlace && openGrid[row,column];
 			if (isMatch)
+			{
 				openGrid[row, column] = false;
-
+				matchesMade++;
+			}
 			return isMatch;
 		}
 
@@ -69,11 +73,14 @@ namespace MathGame
 		{
 			int row = 0, column = 0;
 
+			// Get a new number to match
+			// Keep trying new numbers until we get one that hasn't been gotten before
+			// and only if we haven't already matched all the numbers
 			do
 			{
-				row = rand.Next(0, 3);
-				column = rand.Next(0, 3);
-			} while (!openGrid[row, column]);
+				row = rand.Next(0, ROWS);
+				column = rand.Next(0, COLUMNS);
+			} while (!openGrid[row, column] && !Done);
 
 			numberToPlace = gameGrid[row, column];
 			return numberToPlace.ToString();
