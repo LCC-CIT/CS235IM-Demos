@@ -13,7 +13,7 @@ namespace MathGame
 
 		public string NumberToPlace { get { return numberToPlace.ToString(); } }
 		public bool Done { get { return matchesMade == ROWS * COLUMNS; } }
-		public int ClickCount { get { return clickCount; } }
+		public string ClickCount { get { return clickCount.ToString(); } }
 
 		public void NewGame()
 		{

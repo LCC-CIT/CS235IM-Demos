@@ -254,7 +254,7 @@
         </scene>
         <scene sceneID="75">
             <objects>
-                <tabBarController id="76" sceneMemberID="viewController">
+                <tabBarController id="76" sceneMemberID="viewController" customClass="MathTabBarController" storyboardIdentifier="mathTabBarController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="79">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -2,7 +2,7 @@
 
 using UIKit;
 
-namespace MathGame
+namespace MathGame.Tabbed
 {
 	public partial class ViewController : UIViewController
 	{
@@ -58,6 +58,8 @@ namespace MathGame
 				if (game.Done)
 				{
 					MessageLabel.Text = "You did it in " + game.ClickCount + " clicks!";
+					var controller = (MathTabBarController)this.Storyboard.InstantiateViewController("mathTabBarController");
+					controller.ScoreHistory.Add("Clicks " + game.ClickCount);
 				}
 				else
 				{

@@ -8,7 +8,7 @@ using Foundation;
 using System;
 using System.CodeDom.Compiler;
 
-namespace MathGame
+namespace MathGame.Tabbed
 {
     [Register ("ViewController")]
     partial class ViewController

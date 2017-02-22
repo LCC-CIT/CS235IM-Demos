@@ -9,21 +9,13 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace HelloGoodbyMultiScreen
+namespace MathGame.Tabbed
 {
-    [Register ("HelloViewController")]
-    partial class HelloViewController
+    [Register ("MathTabBarController")]
+    partial class MathTabBarController
     {
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel HelloLabel { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
-            if (HelloLabel != null) {
-                HelloLabel.Dispose ();
-                HelloLabel = null;
-            }
         }
     }
 }

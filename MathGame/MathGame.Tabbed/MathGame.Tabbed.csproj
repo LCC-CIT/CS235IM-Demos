@@ -112,6 +112,10 @@
     <Compile Include="..\MathGame\GameLogic.cs">
       <Link>GameLogic.cs</Link>
     </Compile>
+    <Compile Include="MathTabBarController.cs" />
+    <Compile Include="MathTabBarController.designer.cs">
+      <DependentUpon>MathTabBarController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
