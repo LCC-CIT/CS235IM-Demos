@@ -29,12 +29,24 @@ namespace MathGame
 		partial void TouchUpInsideNewGameButton(UIButton sender)
 		{
 			game.NewGame();
+
+			Button01.SetTitle("", UIControlState.Normal);
+			Button02.SetTitle("", UIControlState.Normal);
+			Button03.SetTitle("", UIControlState.Normal);
+			Button04.SetTitle("", UIControlState.Normal);
+			Button05.SetTitle("", UIControlState.Normal);
+			Button06.SetTitle("", UIControlState.Normal);
+			Button07.SetTitle("", UIControlState.Normal);
+			Button08.SetTitle("", UIControlState.Normal);
+			Button09.SetTitle("", UIControlState.Normal);
+
 			RowLabel01.Text = game.GetRowSum(1);
 			RowLabel02.Text = game.GetRowSum(2);
 			RowLabel03.Text = game.GetRowSum(3);
 			ColumnLabel01.Text = game.GetColumnSum(1);
 			ColumnLabel02.Text = game.GetColumnSum(2);
 			ColumnLabel03.Text = game.GetColumnSum(3);
+
 			NumberLabel.Text = game.GetNewNumberToPlace();
 			MessageLabel.Text = "Place a number";
 		}
@@ -47,7 +59,7 @@ namespace MathGame
 				sender.SetTitle(game.NumberToPlace, UIControlState.Normal);
 				if (game.Done)
 				{
-					MessageLabel.Text = "You got them all!";
+					MessageLabel.Text = "You did it in " + game.ClickCount + " clicks!";
 				}
 				else
 				{

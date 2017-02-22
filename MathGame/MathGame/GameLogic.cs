@@ -9,12 +9,18 @@ namespace MathGame
 		private Random rand = new Random();  // Random number generator
 		private int numberToPlace = 0;
 		private int matchesMade = 0;
+		private int clickCount = 0;
 
 		public string NumberToPlace { get { return numberToPlace.ToString(); } }
-		public bool Done { get {return matchesMade == ROWS * COLUMNS;} }
+		public bool Done { get { return matchesMade == ROWS * COLUMNS; } }
+		public int ClickCount { get { return clickCount; } }
 
 		public void NewGame()
 		{
+		  	numberToPlace = 0;
+		  	matchesMade = 0;
+		  	clickCount = 0;
+
 			// Generate 16 random integers from 1 to 9
 			for (int i = 0; i < ROWS; i++)
 			{
@@ -24,7 +30,7 @@ namespace MathGame
 				}
 			}
 
-
+			// Set all the squares as open (no number placed)
 			for (int i = 0; i < ROWS; i++)
 			{
 				for (int j = 0; j < COLUMNS; j++)
@@ -61,6 +67,7 @@ namespace MathGame
 			int row = (buttonNumber - 1) / COLUMNS;
 			int column = (buttonNumber - 1) % ROWS;
 			bool isMatch = gameGrid[row, column] == numberToPlace && openGrid[row,column];
+			clickCount++;
 			if (isMatch)
 			{
 				openGrid[row, column] = false;
