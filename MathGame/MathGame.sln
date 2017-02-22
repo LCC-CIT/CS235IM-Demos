@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathGame", "MathGame\MathGame.csproj", "{A54523E9-733F-4C40-ACEF-941DEED1DB4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A54523E9-733F-4C40-ACEF-941DEED1DB4F}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{A54523E9-733F-4C40-ACEF-941DEED1DB4F}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{A54523E9-733F-4C40-ACEF-941DEED1DB4F}.Release|iPhone.ActiveCfg = Release|iPhone
+		{A54523E9-733F-4C40-ACEF-941DEED1DB4F}.Release|iPhone.Build.0 = Release|iPhone
+		{A54523E9-733F-4C40-ACEF-941DEED1DB4F}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{A54523E9-733F-4C40-ACEF-941DEED1DB4F}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{A54523E9-733F-4C40-ACEF-941DEED1DB4F}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{A54523E9-733F-4C40-ACEF-941DEED1DB4F}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
