@@ -1,15 +1,17 @@
 ﻿using System;
-
+using System.Collections.Generic;
 using UIKit;
 
 namespace MathGame.Tabbed
 {
-	public partial class ViewController : UIViewController
+	public partial class GameViewController : UIViewController
 	{
 
 		private GameLogic game = new GameLogic();
+		private List<string> scoreHistory = new List<string>();
+		public List<string> ScoreHistory { get { return scoreHistory; } }
 
-		protected ViewController(IntPtr handle) : base(handle)
+		protected GameViewController(IntPtr handle) : base(handle)
 		{
 			// Note: this .ctor should not contain any initialization logic.
 		}
@@ -17,7 +19,14 @@ namespace MathGame.Tabbed
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
-			// Perform any additional setup after loading the view, typically from a nib.
+
+			// For testing
+			ScoreHistory.Add("Clicks: 15");
+			ScoreHistory.Add("Clicks: 9");
+			ScoreHistory.Add("Clicks: 20");
+			ScoreHistory.Add("Clicks: 18");
+			ScoreHistory.Add("Clicks: 25");
+
 		}
 
 		public override void DidReceiveMemoryWarning()
@@ -26,9 +35,28 @@ namespace MathGame.Tabbed
 			// Release any cached data, images, etc that aren't in use.
 		}
 
+
+		public override void PrepareForSegue(UIStoryboardSegue segue, Foundation.NSObject sender)
+		{
+			base.PrepareForSegue(segue, sender);
+
+			var tab = (UITabBarItem)sender;
+
+			if (segue.DestinationViewController != null)
+			{
+				if (tab.Title == "History")
+				{
+					var viewController = (HistoryViewController)segue.DestinationViewController;
+					viewController.ScoreHistory = ((GameViewController)segue.SourceViewController).ScoreHistory;
+				}
+
+			}
+		}
+
 		partial void TouchUpInsideNewGameButton(UIButton sender)
 		{
 			game.NewGame();
+
 			Button01.SetTitle("", UIControlState.Normal);
 			Button02.SetTitle("", UIControlState.Normal);
 			Button03.SetTitle("", UIControlState.Normal);
@@ -58,8 +86,7 @@ namespace MathGame.Tabbed
 				if (game.Done)
 				{
 					MessageLabel.Text = "You did it in " + game.ClickCount + " clicks!";
-					var controller = (MathTabBarController)this.Storyboard.InstantiateViewController("mathTabBarController");
-					controller.ScoreHistory.Add("Clicks " + game.ClickCount);
+					ScoreHistory.Add("Clicks: " + game.ClickCount);
 				}
 				else
 				{

@@ -11,7 +11,7 @@ using System.CodeDom.Compiler;
 namespace MathGame.Tabbed
 {
     [Register ("ViewController")]
-    partial class ViewController
+    partial class GameViewController
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]

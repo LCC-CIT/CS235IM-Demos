@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
@@ -107,14 +106,18 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs" />
+    <Compile Include="GameViewController.cs" />
     <Compile Include="..\MathGame\GameLogic.cs">
       <Link>GameLogic.cs</Link>
     </Compile>
     <Compile Include="MathTabBarController.cs" />
     <Compile Include="MathTabBarController.designer.cs">
       <DependentUpon>MathTabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameViewController.designer.cs" />
+    <Compile Include="HistoryViewController.cs" />
+    <Compile Include="HistoryViewController.designer.cs">
+      <DependentUpon>HistoryViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
