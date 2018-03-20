@@ -21,7 +21,7 @@ namespace MathGame
 		  	matchesMade = 0;
 		  	clickCount = 0;
 
-			// Generate 16 random integers from 1 to 9
+			// Generate 9 random integers from 1 to 9
 			for (int i = 0; i < ROWS; i++)
 			{
 				for (int j = 0; j < COLUMNS; j++)
