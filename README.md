@@ -4,10 +4,6 @@
 ### LayoutDemo
 A do-nothing app with two buttons and a label demonstrating the use of Auto-Layout Constraints.
 
-### AutoLayoutDemo
-- AutoLayoutDemo
-- SizeClassDemo
-
 ### SizeClassDemo
 A four-function calculator demonstrating the use of Size-Classes.
 
