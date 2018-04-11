@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{B01F4DDD-5405-4599-A495-42533C1A66CA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MathGame/Main.storyboard">
+    <Files>
+      <File FileName="MathGame/Main.storyboard" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MathGame.Tabbed PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D6211F9C-6F70-496D-81CB-0EBC9699F1EC" />
+  <MultiItemStartupConfigurations />
+</Properties>
