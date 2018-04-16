@@ -92,6 +92,7 @@
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Main2.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />

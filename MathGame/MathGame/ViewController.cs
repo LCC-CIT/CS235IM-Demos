@@ -26,7 +26,7 @@ namespace MathGame
 			// Release any cached data, images, etc that aren't in use.
 		}
 
-		partial void TouchUpInsideNewGameButton(UIButton sender)
+		partial void NewGameButton_TouchUpInside(UIButton sender)
 		{
 			game.NewGame();
 
