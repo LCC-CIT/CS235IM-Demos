@@ -29,7 +29,7 @@ Demonstrates using a UINavigationController to navigate between three scenes in 
 An app that shows a table of plants with an alphabetic section index on the right side. Clicking on a plant name pops up an alert with information about the plant.
 
 ### StarTrekCastDemo
-Uses a UITableView and a UIDetialView to create a master-detail app.
+Uses a UITableView and a UIDetailView to create a master-detail app.
 ___
 These apps were written for use with a class I teach at Lane Community College,
 CS235IM, Intermediate Mobile Applications Development: iOS.
