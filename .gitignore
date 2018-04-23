@@ -17,3 +17,7 @@ UpgradeLog.*
 *.nib
 *.pfx
 *.zip
+
+SizeClassDemo/.vs/SizeClassDemo/xs/UserPrefs.xml
+
+VocabQuiz_SizeClasses/.vs/VocabQuiz_SizeClasses/xs/UserPrefs.xml
