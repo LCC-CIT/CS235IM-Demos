@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{33C79551-5F1D-42D0-BD12-81FE6DD13A35}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HexCalc/Main.storyboard">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HexCalc/ViewController.cs">
     <Files>
       <File FileName="HexCalc/AppDelegate.cs" Line="9" Column="36" />
       <File FileName="HexCalc/Info.plist" />
@@ -14,6 +14,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.HexCalc PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D6211F9C-6F70-496D-81CB-0EBC9699F1EC" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.HexCalc PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.494D42C1-1F1F-4E72-A3C9-BCE82CFBC31A" automaticSigning="False" />
   <MultiItemStartupConfigurations />
 </Properties>
