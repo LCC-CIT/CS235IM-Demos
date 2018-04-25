@@ -41,6 +41,10 @@ namespace VocabQuiz_SizeClasses
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel QuestionLabel { get; set; }
 
+        [Action ("Answer1Button_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void Answer1Button_TouchUpInside (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
             if (Answer1Button != null) {

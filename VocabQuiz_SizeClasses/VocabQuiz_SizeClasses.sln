@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocabQuiz_SizeClasses", "VocabQuiz_SizeClasses\VocabQuiz_SizeClasses.csproj", "{9C287613-66E2-4EC4-BF09-0A7C115644F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocabQuiz_SizeClasses_Starter", "VocabQuiz_SizeClasses\VocabQuiz_SizeClasses_Starter.csproj", "{9C287613-66E2-4EC4-BF09-0A7C115644F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
