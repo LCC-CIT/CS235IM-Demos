@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina3_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,11 +17,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3">
-                                <rect key="frame" x="107.5" y="207.5" width="199" height="21"/>
+                                <rect key="frame" x="140.5" y="29.5" width="199" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="18"/>
                                     <constraint firstAttribute="width" constant="199" id="19"/>
@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the best answer:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
-                                <rect key="frame" x="107" y="247.5" width="200" height="21"/>
+                                <rect key="frame" x="140" y="69.5" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="16"/>
                                     <constraint firstAttribute="width" constant="200" id="17"/>
@@ -41,7 +41,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5">
-                                <rect key="frame" x="107" y="300.5" width="200" height="30"/>
+                                <rect key="frame" x="25" y="122.5" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="14"/>
@@ -56,7 +56,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26">
-                                <rect key="frame" x="107" y="356.5" width="200" height="30"/>
+                                <rect key="frame" x="25" y="178.5" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="27"/>
@@ -68,7 +68,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30">
-                                <rect key="frame" x="107" y="410.5" width="200" height="30"/>
+                                <rect key="frame" x="255" y="122.5" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="31"/>
@@ -80,7 +80,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34">
-                                <rect key="frame" x="107" y="465.5" width="200" height="30"/>
+                                <rect key="frame" x="255" y="177.5" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="35"/>
@@ -92,7 +92,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right / Wrong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76">
-                                <rect key="frame" x="107" y="528.5" width="200" height="21"/>
+                                <rect key="frame" x="140" y="240.5" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="77"/>
                                     <constraint firstAttribute="width" constant="200" id="78"/>
@@ -119,31 +119,52 @@
                             <constraint id="645" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" constant="120"/>
                             <constraint id="646" firstItem="26" firstAttribute="leading" secondItem="5" secondAttribute="leading"/>
                             <constraint id="647" firstItem="34" firstAttribute="leading" secondItem="30" secondAttribute="leading"/>
+                            <constraint id="919" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="5" secondAttribute="centerX" constant="115"/>
+                            <constraint id="924" firstItem="30" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="115"/>
+                            <constraint id="925" firstItem="30" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="72"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="645"/>
                                 <exclude reference="351"/>
+                                <exclude reference="86"/>
+                                <exclude reference="919"/>
+                                <exclude reference="924"/>
+                                <exclude reference="362"/>
+                                <exclude reference="925"/>
+                                <exclude reference="361"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="645"/>
+                                <include reference="919"/>
+                                <include reference="924"/>
+                                <include reference="925"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
                                 <include reference="645"/>
+                                <include reference="919"/>
+                                <include reference="924"/>
+                                <include reference="925"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="constraints">
                                 <include reference="351"/>
+                                <include reference="86"/>
+                                <include reference="362"/>
+                                <include reference="361"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="351"/>
+                                <include reference="86"/>
+                                <include reference="362"/>
+                                <include reference="361"/>
                             </mask>
                         </variation>
                     </view>
