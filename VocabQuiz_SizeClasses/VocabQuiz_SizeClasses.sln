@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocabQuiz_SizeClasses_Starter", "VocabQuiz_SizeClasses\VocabQuiz_SizeClasses_Starter.csproj", "{9C287613-66E2-4EC4-BF09-0A7C115644F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocabQuiz_SizeClasses_Finished", "VocabQuiz_SizeClasses_Finished\VocabQuiz_SizeClasses_Finished.csproj", "{F7456C33-7DB7-4355-B6CA-03FF8C3F7E8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -19,5 +21,13 @@ Global
 		{9C287613-66E2-4EC4-BF09-0A7C115644F8}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{9C287613-66E2-4EC4-BF09-0A7C115644F8}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{9C287613-66E2-4EC4-BF09-0A7C115644F8}.Debug|iPhone.Build.0 = Debug|iPhone
+		{F7456C33-7DB7-4355-B6CA-03FF8C3F7E8E}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F7456C33-7DB7-4355-B6CA-03FF8C3F7E8E}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F7456C33-7DB7-4355-B6CA-03FF8C3F7E8E}.Release|iPhone.ActiveCfg = Release|iPhone
+		{F7456C33-7DB7-4355-B6CA-03FF8C3F7E8E}.Release|iPhone.Build.0 = Release|iPhone
+		{F7456C33-7DB7-4355-B6CA-03FF8C3F7E8E}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{F7456C33-7DB7-4355-B6CA-03FF8C3F7E8E}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{F7456C33-7DB7-4355-B6CA-03FF8C3F7E8E}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{F7456C33-7DB7-4355-B6CA-03FF8C3F7E8E}.Debug|iPhone.Build.0 = Debug|iPhone
 	EndGlobalSection
 EndGlobal
