@@ -15,19 +15,23 @@ namespace VocabQuiz_SizeClasses
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton Answer1Button { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton Answer2Button { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton Answer3Button { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton Answer4Button { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel AnswerLabel { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton BButton { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton CButton { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton DButton { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -39,24 +43,29 @@ namespace VocabQuiz_SizeClasses
 
         void ReleaseDesignerOutlets ()
         {
+            if (Answer1Button != null) {
+                Answer1Button.Dispose ();
+                Answer1Button = null;
+            }
+
+            if (Answer2Button != null) {
+                Answer2Button.Dispose ();
+                Answer2Button = null;
+            }
+
+            if (Answer3Button != null) {
+                Answer3Button.Dispose ();
+                Answer3Button = null;
+            }
+
+            if (Answer4Button != null) {
+                Answer4Button.Dispose ();
+                Answer4Button = null;
+            }
+
             if (AnswerLabel != null) {
                 AnswerLabel.Dispose ();
                 AnswerLabel = null;
-            }
-
-            if (BButton != null) {
-                BButton.Dispose ();
-                BButton = null;
-            }
-
-            if (CButton != null) {
-                CButton.Dispose ();
-                CButton = null;
-            }
-
-            if (DButton != null) {
-                DButton.Dispose ();
-                DButton = null;
             }
 
             if (HeadingLabel != null) {
