@@ -33,14 +33,22 @@ namespace HelloGoodbyMultiScreen
 			UIViewController controller;
 			if (button.TitleLabel.Text == "Hello")
 			{
+				// Create the destination controller object
 				controller = this.Storyboard.InstantiateViewController("HelloViewController") as HelloViewController;
+                // This is how we communicate the user name to the destination controller
 				((HelloViewController)controller).UserName = userName;
 			}
-			else
+			else   // the "Goodbye" button was tapped
 			{
 				controller = this.Storyboard.InstantiateViewController("GoodbyeViewController") as GoodbyeViewController;
 				((GoodbyeViewController)controller).UserName = userName;
 			}
+			// Use a transition animation
+			UIView.BeginAnimations("HelloGoodby");
+			UIView.SetAnimationDuration(0.5);
+			UIView.SetAnimationTransition(UIViewAnimationTransition.FlipFromLeft, controller.View, true);
+			UIView.CommitAnimations();
+			// Switch scenes
 			this.NavigationController.PushViewController(controller, true);
 
 		}

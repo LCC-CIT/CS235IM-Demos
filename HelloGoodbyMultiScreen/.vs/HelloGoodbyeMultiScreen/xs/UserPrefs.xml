@@ -1,5 +1,12 @@
 ﻿<Properties StartupConfiguration="{F5A27ACB-5EB1-428A-87A8-BD182A138BD4}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloGoodbyeMultiScreen.Code/ViewController.cs">
+    <Files>
+      <File FileName="HelloGoodbyeMultiScreen.Code/ViewController.cs" Line="52" Column="1" />
+      <File FileName="HelloGoodbyeMultiScreen.Code/GoodbyeViewController.cs" Line="1" Column="1" />
+      <File FileName="HelloGoodbyeMultiScreen.Code/HelloViewController.cs" Line="9" Column="3" />
+      <File FileName="HelloGoodbyeMultiScreen.Code/Main.storyboard" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
