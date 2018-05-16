@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{EA438D20-FFE4-461C-8756-BC40F08D844D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloGoodbyeMultiScreen.Code/Main.storyboard">
+    <Files>
+      <File FileName="HelloGoodbyeMultiScreen.Code/ViewController.cs" Line="42" Column="5" />
+      <File FileName="HelloGoodbyeMultiScreen.Code/Main.storyboard" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HelloGoodbyeMultiScreen.Code PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.21B07EEC-2E6B-4154-B5A8-E90E70D2B5A9" />
+  <MonoDevelop.Ide.ItemProperties.HelloGoodbyeMultiScreen.Segue PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.21B07EEC-2E6B-4154-B5A8-E90E70D2B5A9" />
+  <MultiItemStartupConfigurations />
+</Properties>

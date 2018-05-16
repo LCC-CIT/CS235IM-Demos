@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="landscape">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3">
-                                <rect key="frame" x="140.5" y="29.5" width="199" height="21"/>
+                                <rect key="frame" x="234" y="57" width="199" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="18"/>
                                     <constraint firstAttribute="width" constant="199" id="19"/>
@@ -31,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the best answer:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
-                                <rect key="frame" x="140" y="69.5" width="200" height="21"/>
+                                <rect key="frame" x="233.5" y="97" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="16"/>
                                     <constraint firstAttribute="width" constant="200" id="17"/>
@@ -41,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5">
-                                <rect key="frame" x="25" y="122.5" width="200" height="30"/>
+                                <rect key="frame" x="118.5" y="150" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="14"/>
@@ -52,11 +53,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="Answer1Button_TouchUpInside:" destination="BYZ-38-t0r" id="350" eventType="touchUpInside"/>
+                                    <action selector="Answer1Button_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="350"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26">
-                                <rect key="frame" x="25" y="178.5" width="200" height="30"/>
+                                <rect key="frame" x="118.5" y="206" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="27"/>
@@ -68,7 +69,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30">
-                                <rect key="frame" x="255" y="122.5" width="200" height="30"/>
+                                <rect key="frame" x="348.5" y="150" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="31"/>
@@ -80,7 +81,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34">
-                                <rect key="frame" x="255" y="177.5" width="200" height="30"/>
+                                <rect key="frame" x="348.5" y="205" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="35"/>
@@ -92,7 +93,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right / Wrong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76">
-                                <rect key="frame" x="140" y="240.5" width="200" height="21"/>
+                                <rect key="frame" x="233.5" y="268" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="77"/>
                                     <constraint firstAttribute="width" constant="200" id="78"/>
@@ -105,77 +106,77 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="86"/>
-                            <constraint id="351" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" constant="150"/>
-                            <constraint id="352" firstItem="3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="355" firstItem="4" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="19"/>
-                            <constraint id="356" firstItem="4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="358" firstItem="5" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="72"/>
-                            <constraint id="359" firstItem="26" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="26"/>
-                            <constraint id="361" firstItem="30" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="182"/>
-                            <constraint id="362" firstItem="30" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="363" firstItem="34" firstAttribute="top" secondItem="30" secondAttribute="bottom" constant="25"/>
-                            <constraint id="365" firstItem="76" firstAttribute="top" secondItem="34" secondAttribute="bottom" constant="33"/>
-                            <constraint id="366" firstItem="76" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="645" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" constant="120"/>
-                            <constraint id="646" firstItem="26" firstAttribute="leading" secondItem="5" secondAttribute="leading"/>
-                            <constraint id="647" firstItem="34" firstAttribute="leading" secondItem="30" secondAttribute="leading"/>
-                            <constraint id="919" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="5" secondAttribute="centerX" constant="115"/>
-                            <constraint id="924" firstItem="30" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="115"/>
-                            <constraint id="925" firstItem="30" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="72"/>
+                            <constraint firstAttribute="centerY" secondItem="3" secondAttribute="centerY" constant="150" id="351"/>
+                            <constraint firstItem="3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="352"/>
+                            <constraint firstItem="4" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="19" id="355"/>
+                            <constraint firstItem="4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="356"/>
+                            <constraint firstItem="5" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="72" id="358"/>
+                            <constraint firstItem="26" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="26" id="359"/>
+                            <constraint firstItem="30" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="182" id="361"/>
+                            <constraint firstItem="30" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="362"/>
+                            <constraint firstItem="34" firstAttribute="top" secondItem="30" secondAttribute="bottom" constant="25" id="363"/>
+                            <constraint firstItem="76" firstAttribute="top" secondItem="34" secondAttribute="bottom" constant="33" id="365"/>
+                            <constraint firstItem="76" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="366"/>
+                            <constraint firstAttribute="centerY" secondItem="3" secondAttribute="centerY" constant="120" id="645"/>
+                            <constraint firstItem="26" firstAttribute="leading" secondItem="5" secondAttribute="leading" id="646"/>
+                            <constraint firstItem="34" firstAttribute="leading" secondItem="30" secondAttribute="leading" id="647"/>
+                            <constraint firstAttribute="centerX" secondItem="5" secondAttribute="centerX" constant="115" id="919"/>
+                            <constraint firstItem="30" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="115" id="924"/>
+                            <constraint firstItem="30" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="72" id="925"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="645"/>
-                                <exclude reference="351"/>
                                 <exclude reference="86"/>
                                 <exclude reference="919"/>
-                                <exclude reference="924"/>
-                                <exclude reference="362"/>
-                                <exclude reference="925"/>
+                                <exclude reference="351"/>
+                                <exclude reference="645"/>
                                 <exclude reference="361"/>
+                                <exclude reference="362"/>
+                                <exclude reference="924"/>
+                                <exclude reference="925"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="645"/>
                                 <include reference="919"/>
+                                <include reference="645"/>
                                 <include reference="924"/>
                                 <include reference="925"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
-                                <include reference="645"/>
                                 <include reference="919"/>
+                                <include reference="645"/>
                                 <include reference="924"/>
                                 <include reference="925"/>
                             </mask>
                         </variation>
-                        <variation key="heightClass=regular-widthClass=regular">
-                            <mask key="constraints">
-                                <include reference="351"/>
-                                <include reference="86"/>
-                                <include reference="362"/>
-                                <include reference="361"/>
-                            </mask>
-                        </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="351"/>
                                 <include reference="86"/>
-                                <include reference="362"/>
+                                <include reference="351"/>
                                 <include reference="361"/>
+                                <include reference="362"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="86"/>
+                                <include reference="351"/>
+                                <include reference="361"/>
+                                <include reference="362"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="AnswerLabel" destination="76" id="name-outlet-76"/>
+                        <outlet property="Answer1Button" destination="5" id="name-outlet-5"/>
                         <outlet property="Answer2Button" destination="26" id="name-outlet-26"/>
                         <outlet property="Answer3Button" destination="30" id="name-outlet-30"/>
                         <outlet property="Answer4Button" destination="34" id="name-outlet-34"/>
+                        <outlet property="AnswerLabel" destination="76" id="name-outlet-76"/>
                         <outlet property="HeadingLabel" destination="4" id="name-outlet-4"/>
                         <outlet property="QuestionLabel" destination="3" id="name-outlet-3"/>
-                        <outlet property="Answer1Button" destination="5" id="name-outlet-5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

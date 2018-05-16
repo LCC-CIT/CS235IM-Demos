@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,11 +17,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3">
-                                <rect key="frame" x="88" y="245.5" width="199" height="21"/>
+                                <rect key="frame" x="60.5" y="123.5" width="199" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="18"/>
                                     <constraint firstAttribute="width" constant="199" id="19"/>
@@ -30,8 +30,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the best answer:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
-                                <rect key="frame" x="87.5" y="285.5" width="200" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the best answer:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4" misplaced="YES">
+                                <rect key="frame" x="60" y="193.5" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="16"/>
                                     <constraint firstAttribute="width" constant="200" id="17"/>
@@ -40,8 +40,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5">
-                                <rect key="frame" x="87.5" y="338.5" width="200" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5" misplaced="YES">
+                                <rect key="frame" x="60" y="246.5" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="14"/>
@@ -55,8 +55,8 @@
                                     <action selector="Answer1Button_TouchUpInside:" destination="BYZ-38-t0r" id="350" eventType="touchUpInside"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26">
-                                <rect key="frame" x="87.5" y="394.5" width="200" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26" misplaced="YES">
+                                <rect key="frame" x="60" y="302.5" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="27"/>
@@ -67,8 +67,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30">
-                                <rect key="frame" x="87.5" y="448.5" width="200" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30" misplaced="YES">
+                                <rect key="frame" x="60" y="356.5" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="31"/>
@@ -79,8 +79,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34">
-                                <rect key="frame" x="87.5" y="503.5" width="200" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34" misplaced="YES">
+                                <rect key="frame" x="60" y="411.5" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="35"/>
@@ -91,8 +91,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right / Wrong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76">
-                                <rect key="frame" x="87.5" y="566.5" width="200" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right / Wrong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76" misplaced="YES">
+                                <rect key="frame" x="60" y="474.5" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="77"/>
                                     <constraint firstAttribute="width" constant="200" id="78"/>
@@ -105,7 +105,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="86"/>
-                            <constraint id="351" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" constant="150"/>
+                            <constraint id="351" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" constant="120"/>
                             <constraint id="352" firstItem="3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
                             <constraint id="355" firstItem="4" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="19"/>
                             <constraint id="356" firstItem="4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
@@ -118,7 +118,36 @@
                             <constraint id="366" firstItem="76" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
                             <constraint id="1326" firstItem="26" firstAttribute="leading" secondItem="5" secondAttribute="leading"/>
                             <constraint id="1327" firstItem="34" firstAttribute="leading" secondItem="30" secondAttribute="leading"/>
+                            <constraint id="1866" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" constant="150"/>
                         </constraints>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="351"/>
+                                <include reference="1866"/>
+                            </mask>
+                        </variation>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1866"/>
+                                <exclude reference="351"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="351"/>
+                                <include reference="1866"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="351"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="351"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="AnswerLabel" destination="76" id="name-outlet-76"/>

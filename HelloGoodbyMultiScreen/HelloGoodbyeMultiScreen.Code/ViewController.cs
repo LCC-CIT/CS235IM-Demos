@@ -30,6 +30,12 @@ namespace HelloGoodbyMultiScreen
 			userName = NameTextField.Text;
 			UIButton button = (UIButton)sender;
 
+            UIView.BeginAnimations("My animation");
+            UIView.SetAnimationDuration(2.0);
+            UIView.SetAnimationCurve(UIViewAnimationCurve.EaseInOut);
+            UIView.SetAnimationTransition(UIViewAnimationTransition.CurlDown, this.View, true);
+            UIView.CommitAnimations();
+
 			UIViewController controller;
 			if (button.TitleLabel.Text == "Hello")
 			{
@@ -42,7 +48,6 @@ namespace HelloGoodbyMultiScreen
 				((GoodbyeViewController)controller).UserName = userName;
 			}
 			this.NavigationController.PushViewController(controller, true);
-
 		}
 
 	}
