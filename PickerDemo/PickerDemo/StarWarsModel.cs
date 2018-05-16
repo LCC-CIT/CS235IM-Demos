@@ -5,14 +5,14 @@ namespace PickerDemo
 {
 	public class StarWarsModel : UIPickerViewModel
     {
-		private string[] characterNames = {"Luke", "Leia", "Chewbecca",
-            "Artoo", "Threepio", "Lando"};
+		private string[] characterNames = {"Han Solo", "Princess Leia", 
+            "Chewbecca", "Artoo", "C-3PO", "Poe Dameron", "Ray", "Finn"};
         
-		private UILabel characterLabel;
+		private ViewController controller;
         
-        public StarWarsModel(UILabel characterLabel)
+        public StarWarsModel(ViewController vc)
         {
-            this.characterLabel = characterLabel;
+            controller = vc;
         }
 
         // The number returned determines the number of rings in the picker
@@ -28,26 +28,23 @@ namespace PickerDemo
 
         public override string GetTitle(UIPickerView pickerView, nint row, nint component)
         {
-            if (component == 0)
-                return characterNames[row];
-            else
-                return row.ToString();
+            return characterNames[row];
         }
 
         public override void Selected(UIPickerView pickerView, nint row, nint component)
         {
-			characterLabel.Text = characterNames[pickerView.SelectedRowInComponent(0)];
+            controller.DisplayName(characterNames[pickerView.SelectedRowInComponent(0)]);
         }
 
         public override nfloat GetComponentWidth(UIPickerView picker, nint component)
         {
 			// there is only one component, this is it's width setting
-			return 240f;
+			return 200f;
         }
 
         public override nfloat GetRowHeight(UIPickerView picker, nint component)
         {
-            return 40f;
+            return 50f;
         }
     }
 }

@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="233" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="124.5" y="381.5" width="139" height="33"/>
+                                <rect key="frame" x="138" y="382" width="139" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,8 +41,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint id="444" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="233" secondAttribute="centerX" constant="13"/>
-                            <constraint id="445" firstItem="233" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30"/>
+                            <constraint id="444" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="233" secondAttribute="centerX" constant="-0.5"/>
+                            <constraint id="445" firstItem="233" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30.5"/>
                             <constraint id="1298" firstItem="1295" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
                             <constraint id="1299" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="1295" secondAttribute="centerY" constant="176"/>
                         </constraints>

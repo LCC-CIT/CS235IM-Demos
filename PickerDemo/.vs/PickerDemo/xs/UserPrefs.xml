@@ -1,18 +1,13 @@
 ﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupConfiguration="{2ECF3F00-5934-470A-9608-F429D69ABF6E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PickerDemo/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PickerDemo/StarWarsModel.cs">
     <Files>
-      <File FileName="PickerDemo/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="PickerDemo/ViewController.cs" Line="13" Column="3" />
       <File FileName="PickerDemo/Main.storyboard" />
-      <File FileName="PickerDemo/StarWarsModel.cs" Line="38" Column="79" />
-      <File FileName="PickerDemo/ViewController.designer.cs" Line="1" Column="1" />
-      <File FileName="PickerDemo/Main.cs" Line="12" Column="1" />
-      <File FileName="PickerDemo/Info.plist" />
-      <File FileName="PickerDemo/Entitlements.plist" />
+      <File FileName="PickerDemo/ViewController.cs" Line="20" Column="49" />
+      <File FileName="PickerDemo/StarWarsModel.cs" Line="36" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.ItemProperties.PickerDemo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.494D42C1-1F1F-4E72-A3C9-BCE82CFBC31A" HideGettingStarted="True" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.PickerDemo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.21B07EEC-2E6B-4154-B5A8-E90E70D2B5A9" HideGettingStarted="True" automaticSigning="False" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

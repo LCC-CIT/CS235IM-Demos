@@ -17,7 +17,7 @@ namespace PickerDemo
         // Model property
 		public override void ViewDidLoad ()
 		{
-			StarWarsPicker.Model = new StarWarsModel(CharacterLabel);  
+			StarWarsPicker.Model = new StarWarsModel(this);  
 			base.ViewDidLoad ();
 		}
 
@@ -27,8 +27,10 @@ namespace PickerDemo
 			// Release any cached data, images, etc that aren't in use.
 		}
 
-
-
+        public void DisplayName(string name)
+        {
+            CharacterLabel.Text = name;
+        }
 
 	}
 }
