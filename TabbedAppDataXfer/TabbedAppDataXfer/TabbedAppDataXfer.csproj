@@ -124,10 +124,6 @@
     <Compile Include="MessageTabBarController.designer.cs">
       <DependentUpon>MessageTabBarController.cs</DependentUpon>
     </Compile>
-    <Compile Include="SingleComponentPickerViewController.cs" />
-    <Compile Include="SingleComponentPickerViewController.designer.cs">
-      <DependentUpon>SingleComponentPickerViewController.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
