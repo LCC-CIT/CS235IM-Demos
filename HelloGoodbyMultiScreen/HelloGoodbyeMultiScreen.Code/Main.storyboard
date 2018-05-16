@@ -30,7 +30,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+<<<<<<< HEAD
                                     <action selector="TouchUpInsideEachButton:" destination="BYZ-38-t0r" id="1019" eventType="touchUpInside"/>
+=======
+                                    <action selector="TouchUpInsideEachButton:" destination="BYZ-38-t0r" id="608" eventType="touchUpInside"/>
+>>>>>>> 99533c3701edaf6a14d517e12483fd98a13cac5f
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5">
@@ -40,7 +44,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+<<<<<<< HEAD
                                     <action selector="TouchUpInsideEachButton:" destination="BYZ-38-t0r" id="1020" eventType="touchUpInside"/>
+=======
+                                    <action selector="TouchUpInsideEachButton:" destination="BYZ-38-t0r" id="609" eventType="touchUpInside"/>
+>>>>>>> 99533c3701edaf6a14d517e12483fd98a13cac5f
                                 </connections>
                             </button>
                         </subviews>
