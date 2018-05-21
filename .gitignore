@@ -8,7 +8,7 @@ UpgradeLog.*
 *.DS_Store
 *.sln.cache
 *.suo
-*.userprefs
+*.userprefs.*
 *.usertasks
 *.user
 *.pidb
@@ -24,3 +24,7 @@ VocabQuiz_SizeClasses/.vs/VocabQuiz_SizeClasses/xs/UserPrefs.xml
 HelloGoodbyMultiScreen/.vs/HelloGoodbyeMultiScreen/xs/UserPrefs.xml
 HelloGoodbyMultiScreen/.vs/HelloGoodbyeMultiScreen/xs/UserPrefs.xml
 HelloGoodbyMultiScreen/.vs/HelloGoodbyeMultiScreen/xs/UserPrefs.xml
+
+*.ide-shm
+
+*.ide-wal
