@@ -1,9 +1,10 @@
 ﻿using System;
+using Foundation;
 using UIKit;
 // Written by Brian Bird, 2/8/2016
 // Updated 5/21/2018
 
-namespace PickerDemo
+namespace PickerDemo2Screens
 {
 	public partial class ViewController : UIViewController
 	{
@@ -20,7 +21,7 @@ namespace PickerDemo
 			StarWarsPicker.Model = new StarWarsModel(this);  
 			base.ViewDidLoad ();
 		}
-
+      
 		public override void DidReceiveMemoryWarning ()
 		{
 			base.DidReceiveMemoryWarning ();
@@ -29,6 +30,7 @@ namespace PickerDemo
 
         public void DisplayName(string name)
         {
+			((AppDelegate)UIApplication.SharedApplication.Delegate).CharacterName = name;
             CharacterLabel.Text = name;
         }
 

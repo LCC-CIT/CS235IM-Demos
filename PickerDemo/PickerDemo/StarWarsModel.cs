@@ -1,7 +1,7 @@
 ﻿using System;
 using UIKit;
 
-namespace PickerDemo
+namespace PickerDemo2Screens
 {
 	public class StarWarsModel : UIPickerViewModel
     {

@@ -8,7 +8,7 @@ using Foundation;
 using System;
 using System.CodeDom.Compiler;
 
-namespace PickerDemo
+namespace PickerDemo2Screens
 {
     [Register ("ViewController")]
     partial class ViewController
