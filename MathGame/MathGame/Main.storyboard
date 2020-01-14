@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="197">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="197">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
         <scene sceneID="196">
             <objects>
                 <viewController id="197" customClass="ViewController" sceneMemberID="viewController">
@@ -13,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="267"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="234">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="235" fixedFrame="YES">
@@ -24,8 +26,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="TouchUpInsideGridButton:" destination="237" eventType="touchUpInside" id="236"/>
-                                    <action selector="TouchUpInsideGridButton:" destination="197" id="887" eventType="touchUpInside"/>
+                                    <action selector="TouchUpInsideGridButton:" destination="197" eventType="touchUpInside" id="887"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="238" fixedFrame="YES">
@@ -36,8 +37,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="TouchUpInsideGridButton:" destination="237" eventType="touchUpInside" id="239"/>
-                                    <action selector="TouchUpInsideGridButton:" destination="197" id="888" eventType="touchUpInside"/>
+                                    <action selector="TouchUpInsideGridButton:" destination="197" eventType="touchUpInside" id="888"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="240" fixedFrame="YES">
@@ -48,8 +48,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="TouchUpInsideGridButton:" destination="237" eventType="touchUpInside" id="241"/>
-                                    <action selector="TouchUpInsideGridButton:" destination="197" id="889" eventType="touchUpInside"/>
+                                    <action selector="TouchUpInsideGridButton:" destination="197" eventType="touchUpInside" id="889"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="242" fixedFrame="YES">
@@ -60,8 +59,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="TouchUpInsideGridButton:" destination="237" eventType="touchUpInside" id="243"/>
-                                    <action selector="TouchUpInsideGridButton:" destination="197" id="614" eventType="touchUpInside"/>
+                                    <action selector="TouchUpInsideGridButton:" destination="197" eventType="touchUpInside" id="614"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="244" fixedFrame="YES">
@@ -72,8 +70,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="TouchUpInsideGridButton:" destination="237" eventType="touchUpInside" id="245"/>
-                                    <action selector="TouchUpInsideGridButton:" destination="197" id="615" eventType="touchUpInside"/>
+                                    <action selector="TouchUpInsideGridButton:" destination="197" eventType="touchUpInside" id="615"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="246" fixedFrame="YES">
@@ -84,8 +81,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="TouchUpInsideGridButton:" destination="237" eventType="touchUpInside" id="247"/>
-                                    <action selector="TouchUpInsideGridButton:" destination="197" id="613" eventType="touchUpInside"/>
+                                    <action selector="TouchUpInsideGridButton:" destination="197" eventType="touchUpInside" id="613"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="248" fixedFrame="YES">
@@ -96,8 +92,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="TouchUpInsideGridButton:" destination="237" eventType="touchUpInside" id="249"/>
-                                    <action selector="TouchUpInsideGridButton:" destination="197" id="616" eventType="touchUpInside"/>
+                                    <action selector="TouchUpInsideGridButton:" destination="197" eventType="touchUpInside" id="616"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="250" fixedFrame="YES">
@@ -108,8 +103,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="TouchUpInsideGridButton:" destination="237" eventType="touchUpInside" id="251"/>
-                                    <action selector="TouchUpInsideGridButton:" destination="197" id="617" eventType="touchUpInside"/>
+                                    <action selector="TouchUpInsideGridButton:" destination="197" eventType="touchUpInside" id="617"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="252" fixedFrame="YES">
@@ -120,8 +114,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="TouchUpInsideGridButton:" destination="237" eventType="touchUpInside" id="253"/>
-                                    <action selector="TouchUpInsideGridButton:" destination="197" id="618" eventType="touchUpInside"/>
+                                    <action selector="TouchUpInsideGridButton:" destination="197" eventType="touchUpInside" id="618"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="254" fixedFrame="YES">
@@ -179,8 +172,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="TouchUpInsideNewGameButton:" destination="237" eventType="touchUpInside" id="261"/>
-                                    <action selector="TouchUpInsideNewGameButton:" destination="197" id="537" eventType="touchUpInside"/>
+                                    <action selector="TouchUpInsideNewGameButton:" destination="197" eventType="touchUpInside" id="537"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" - - " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="262" fixedFrame="YES">
@@ -208,25 +200,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="Button01" destination="199" id="198"/>
-                        <outlet property="Button02" destination="201" id="200"/>
-                        <outlet property="Button03" destination="203" id="202"/>
-                        <outlet property="Button04" destination="205" id="204"/>
-                        <outlet property="Button05" destination="207" id="206"/>
-                        <outlet property="Button06" destination="209" id="208"/>
-                        <outlet property="Button07" destination="211" id="210"/>
-                        <outlet property="Button08" destination="213" id="212"/>
-                        <outlet property="Button09" destination="215" id="214"/>
-                        <outlet property="ColumnLabel01" destination="217" id="216"/>
-                        <outlet property="ColumnLabel02" destination="219" id="218"/>
-                        <outlet property="ColumnLabel03" destination="221" id="220"/>
-                        <outlet property="MessageLabel" destination="223" id="222"/>
-                        <outlet property="NewGameButton" destination="225" id="224"/>
-                        <outlet property="NumberLabel" destination="227" id="226"/>
-                        <outlet property="RowLabel01" destination="229" id="228"/>
-                        <outlet property="RowLabel02" destination="231" id="230"/>
-                        <outlet property="RowLabel03" destination="233" id="232"/>
-                        <outlet property="NewGameButton" destination="260" id="name-outlet-260"/>
                         <outlet property="Button01" destination="235" id="name-outlet-235"/>
                         <outlet property="Button02" destination="238" id="name-outlet-238"/>
                         <outlet property="Button03" destination="240" id="name-outlet-240"/>
@@ -236,14 +209,15 @@
                         <outlet property="Button07" destination="248" id="name-outlet-248"/>
                         <outlet property="Button08" destination="250" id="name-outlet-250"/>
                         <outlet property="Button09" destination="252" id="name-outlet-252"/>
-                        <outlet property="RowLabel01" destination="254" id="name-outlet-254"/>
-                        <outlet property="RowLabel02" destination="255" id="name-outlet-255"/>
-                        <outlet property="RowLabel03" destination="256" id="name-outlet-256"/>
                         <outlet property="ColumnLabel01" destination="257" id="name-outlet-257"/>
                         <outlet property="ColumnLabel02" destination="258" id="name-outlet-258"/>
                         <outlet property="ColumnLabel03" destination="259" id="name-outlet-259"/>
-                        <outlet property="NumberLabel" destination="262" id="name-outlet-262"/>
                         <outlet property="MessageLabel" destination="263" id="name-outlet-263"/>
+                        <outlet property="NewGameButton" destination="260" id="name-outlet-260"/>
+                        <outlet property="NumberLabel" destination="262" id="name-outlet-262"/>
+                        <outlet property="RowLabel01" destination="254" id="name-outlet-254"/>
+                        <outlet property="RowLabel02" destination="255" id="name-outlet-255"/>
+                        <outlet property="RowLabel03" destination="256" id="name-outlet-256"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="265" sceneMemberID="firstResponder"/>
