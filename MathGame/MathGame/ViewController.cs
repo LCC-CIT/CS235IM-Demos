@@ -1,5 +1,4 @@
 ﻿using System;
-
 using UIKit;
 
 namespace MathGame
@@ -72,5 +71,6 @@ namespace MathGame
 				MessageLabel.Text = "Sorry, try again";
 			}
 		}
-	}
+
+    }
 }
