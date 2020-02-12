@@ -25,9 +25,11 @@ namespace HelloGoodbyMultiScreen
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField NameTextField { get; set; }
 
-        [Action ("TouchUpInsideHelloButton:")]
+        /*
+        [Action ("TouchUpInsideEachButton:")]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void TouchUpInsideHelloButton (UIKit.UIButton sender);
+        partial void TouchUpInsideEachButton (UIKit.UIButton sender);
+        */
 
         void ReleaseDesignerOutlets ()
         {

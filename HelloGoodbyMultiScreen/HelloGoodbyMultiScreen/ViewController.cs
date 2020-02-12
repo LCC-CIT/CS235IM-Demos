@@ -24,12 +24,13 @@ namespace HelloGoodbyMultiScreen
 			base.DidReceiveMemoryWarning();
 			// Release any cached data, images, etc that aren't in use.
 		}
+        /*  // Button Action not needed with Segue
 
 		partial void TouchUpInsideEachButton(UIButton sender)
 		{
 			userName = NameTextField.Text;
 		}
-
+        */ 
 
 		public override void PrepareForSegue(UIStoryboardSegue segue, Foundation.NSObject sender)
 		{
@@ -38,6 +39,7 @@ namespace HelloGoodbyMultiScreen
 			UIButton button = (UIButton)sender;
 			if (segue.DestinationViewController != null)
 			{
+                userName = NameTextField.Text;
 				if (button.TitleLabel.Text == "Hello")
 				{
 					var controller = (HelloViewController)segue.DestinationViewController;
